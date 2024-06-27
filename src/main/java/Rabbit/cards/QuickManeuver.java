@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.cards.green.DodgeAndRoll;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.DexterityPower;
+import com.megacrit.cardcrawl.powers.LoseDexterityPower;
 import com.megacrit.cardcrawl.powers.LoseStrengthPower;
 
 import static Rabbit.MainModfile.makeID;
@@ -23,7 +24,7 @@ public class QuickManeuver extends AbstractEasyCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         blck();
         Wiz.applyToSelf(new DexterityPower(p, magicNumber));
-        Wiz.applyToSelf(new LoseStrengthPower(p, magicNumber));
+        Wiz.applyToSelf(new LoseDexterityPower(p, magicNumber));
     }
 
     @Override
