@@ -17,7 +17,7 @@ public class DireStrike extends AbstractEasyCard {
 
     public DireStrike() {
         super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
-        baseDamage = damage = 8;
+        baseDamage = damage = 10;
         tags.add(CardTags.STRIKE);
     }
 
@@ -40,7 +40,7 @@ public class DireStrike extends AbstractEasyCard {
 
     @Override
     public void upp() {
-        upgradeDamage(3);
+        upgradeDamage(4);
     }
 
     @Override
