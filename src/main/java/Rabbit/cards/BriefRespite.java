@@ -28,7 +28,7 @@ public class BriefRespite extends AbstractClutchCard {
 
     @Override
     public void upp() {
-        upgradeMagicNumber(1);
+        upgradeBaseCost(0);
     }
 
     @Override
