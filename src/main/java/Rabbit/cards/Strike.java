@@ -1,6 +1,8 @@
 package Rabbit.cards;
 
+import Rabbit.cardmods.CarrotMod;
 import Rabbit.cards.abstracts.AbstractEasyCard;
+import basemod.helpers.CardModifierManager;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.red.Strike_Red;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -13,9 +15,10 @@ public class Strike extends AbstractEasyCard {
 
     public Strike() {
         super(ID, 1, CardType.ATTACK, CardRarity.BASIC, CardTarget.ENEMY);
-        baseDamage = damage = 6;
+        baseDamage = damage = 5;
         tags.add(CardTags.STRIKE);
         tags.add(CardTags.STARTER_STRIKE);
+        CardModifierManager.addModifier(this, new CarrotMod(1));
     }
 
     @Override
@@ -25,7 +28,8 @@ public class Strike extends AbstractEasyCard {
 
     @Override
     public void upp() {
-        upgradeDamage(3);
+        upgradeDamage(2);
+        CardModifierManager.addModifier(this, new CarrotMod(1));
     }
 
     @Override
