@@ -16,7 +16,7 @@ public class DireStrike extends AbstractEasyCard {
     public final static String ID = makeID(DireStrike.class.getSimpleName());
 
     public DireStrike() {
-        super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
+        super(ID, 1, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
         baseDamage = damage = 10;
         tags.add(CardTags.STRIKE);
     }
