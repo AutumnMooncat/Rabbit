@@ -56,7 +56,7 @@
   },
   "${ModID}:ChargeUp": {
     "NAME": "Charge Up",
-    "DESCRIPTION": "Next turn, gain !B! Block and {@@}{!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]} ."
+    "DESCRIPTION": "Gain !B! Block. NL Next turn, gain !B! Block and {@@}{!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]} ."
   },
   "${ModID}:CirclesOfDeath": {
     "NAME": "Circles of Death",

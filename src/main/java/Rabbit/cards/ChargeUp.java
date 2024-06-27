@@ -15,19 +15,20 @@ public class ChargeUp extends AbstractEasyCard {
 
     public ChargeUp() {
         super(ID, 1, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.SELF);
-        baseBlock = block = 10;
+        baseBlock = block = 5;
         baseMagicNumber = magicNumber = 1;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        blck();
         Wiz.applyToSelf(new NextTurnBlockPower(p, block));
         Wiz.applyToSelf(new EnergizedBluePower(p, magicNumber));
     }
 
     @Override
     public void upp() {
-        upgradeBlock(4);
+        upgradeBlock(2);
     }
 
     @Override
