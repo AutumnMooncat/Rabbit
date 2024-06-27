@@ -13,8 +13,8 @@ public class FireBlast extends AbstractEasyCard {
     public final static String ID = makeID(FireBlast.class.getSimpleName());
 
     public FireBlast() {
-        super(ID, 2, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
-        baseDamage = damage = 16;
+        super(ID, 1, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
+        baseDamage = damage = 7;
     }
 
     @Override
@@ -45,7 +45,7 @@ public class FireBlast extends AbstractEasyCard {
 
     @Override
     public void upp() {
-        upgradeDamage(4);
+        upgradeDamage(3);
     }
 
     @Override
