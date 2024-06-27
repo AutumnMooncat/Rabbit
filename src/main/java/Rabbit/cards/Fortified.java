@@ -1,7 +1,9 @@
 package Rabbit.cards;
 
+import Rabbit.cardmods.CarrotMod;
 import Rabbit.cards.abstracts.AbstractEasyCard;
 import Rabbit.util.Wiz;
+import basemod.helpers.CardModifierManager;
 import com.megacrit.cardcrawl.cards.red.Impervious;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -15,14 +17,14 @@ public class Fortified extends AbstractEasyCard {
     public Fortified() {
         super(ID, 1, CardType.SKILL, CardRarity.RARE, CardTarget.SELF);
         baseBlock = block = 10;
-        baseMagicNumber = magicNumber = 1;
+        CardModifierManager.addModifier(this, new CarrotMod(1));
         exhaust = true;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         blck();
-        Wiz.applyToSelf(new ArtifactPower(p, magicNumber));
+        Wiz.applyToSelf(new ArtifactPower(p, Wiz.carrotCount(this)));
     }
 
     @Override

@@ -154,7 +154,7 @@
   },
   "${ModID}:Fortified": {
     "NAME": "Fortified",
-    "DESCRIPTION": "Gain !B! Block. NL Gain !M! Artifact. NL Exhaust."
+    "DESCRIPTION": "Gain !B! Block. NL Gain [${ModID}:CarrotIcon] Artifact. NL Exhaust."
   },
   "${ModID}:FromBeyond": {
     "NAME": "From Beyond",
