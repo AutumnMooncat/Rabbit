@@ -73,8 +73,8 @@ public class TheRabbit extends CustomPlayer {
     @Override
     public CharSelectInfo getLoadout() {
         return new CharSelectInfo(NAMES[0], TEXT[0],
-                65,
-                65,
+                72,
+                72,
                 0,
                 99,
                 5, this, getStartingRelics(),
