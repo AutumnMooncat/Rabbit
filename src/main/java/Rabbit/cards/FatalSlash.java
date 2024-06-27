@@ -1,7 +1,7 @@
 package Rabbit.cards;
 
 import Rabbit.cards.abstracts.AbstractEasyCard;
-import Rabbit.powers.SmokescreenPower;
+import Rabbit.powers.FatalSlashPower;
 import Rabbit.util.Wiz;
 import com.megacrit.cardcrawl.cards.green.GlassKnife;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -19,7 +19,7 @@ public class FatalSlash extends AbstractEasyCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        Wiz.applyToSelf(new SmokescreenPower(p, magicNumber));
+        Wiz.applyToSelf(new FatalSlashPower(p, magicNumber));
     }
 
     @Override
