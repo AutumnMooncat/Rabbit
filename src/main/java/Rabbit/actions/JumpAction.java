@@ -30,9 +30,9 @@ public class JumpAction extends AbstractGameAction {
     public void update() {
         if (clearQueue) {
             drawnCards.clear();
+            AbstractDungeon.player.useJumpAnimation();
         }
         CardCounterPatches.jumpsThisTurn += amount;
-        AbstractDungeon.player.useJumpAnimation();
         addToTop(new DrawCardAction(amount, new DoAction(() -> {
             int draw = 0;
             for (AbstractCard card : DrawCardAction.drawnCards) {
