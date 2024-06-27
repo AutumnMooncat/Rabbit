@@ -20,8 +20,8 @@ public class SweepingBlade extends AbstractEasyCard {
     public final static String ID = makeID(SweepingBlade.class.getSimpleName());
 
     public SweepingBlade() {
-        super(ID, 1, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ALL_ENEMY);
-        baseDamage = damage = 10;
+        super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ALL_ENEMY);
+        baseDamage = damage = 8;
         isMultiDamage = true;
         exhaust = true;
     }
@@ -40,7 +40,7 @@ public class SweepingBlade extends AbstractEasyCard {
 
     @Override
     public void upp() {
-        upgradeDamage(4);
+        upgradeDamage(3);
     }
 
     @Override
