@@ -2,19 +2,15 @@ package Rabbit.cards;
 
 import Rabbit.actions.BetterSelectCardsInHandAction;
 import Rabbit.actions.DoAction;
-import Rabbit.actions.DoIfAction;
 import Rabbit.cardmods.CarrotMod;
 import Rabbit.cards.abstracts.AbstractEasyCard;
-import Rabbit.powers.interfaces.OnPlaceCarrotsPower;
 import Rabbit.util.KeywordManager;
 import basemod.helpers.CardModifierManager;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.blue.HelloWorld;
 import com.megacrit.cardcrawl.cards.purple.WreathOfFlame;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.AbstractPower;
 
 import static Rabbit.MainModfile.makeID;
 

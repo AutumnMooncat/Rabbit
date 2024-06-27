@@ -3,13 +3,9 @@ package Rabbit.cards;
 import Rabbit.actions.DoAction;
 import Rabbit.actions.JumpAction;
 import Rabbit.cards.abstracts.AbstractEasyCard;
-import com.megacrit.cardcrawl.actions.utility.NewQueueCardAction;
-import com.megacrit.cardcrawl.actions.utility.UnlimboAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.green.Acrobatics;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.Settings;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import static Rabbit.MainModfile.makeID;

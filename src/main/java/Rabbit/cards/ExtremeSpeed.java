@@ -1,6 +1,5 @@
 package Rabbit.cards;
 
-import Rabbit.actions.DoAction;
 import Rabbit.actions.EasyXCostAction;
 import Rabbit.cards.abstracts.AbstractEasyCard;
 import com.evacipated.cardcrawl.mod.stslib.actions.common.MoveCardsAction;

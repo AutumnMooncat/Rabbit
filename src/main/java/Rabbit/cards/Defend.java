@@ -2,7 +2,6 @@ package Rabbit.cards;
 
 import Rabbit.cards.abstracts.AbstractEasyCard;
 import com.megacrit.cardcrawl.cards.green.Defend_Green;
-import com.megacrit.cardcrawl.cards.red.Defend_Red;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 

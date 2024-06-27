@@ -1,11 +1,9 @@
 package Rabbit.cards;
 
 import Rabbit.cards.abstracts.AbstractEasyCard;
-import Rabbit.powers.FuryPower;
 import Rabbit.powers.VelocityPower;
 import Rabbit.util.Wiz;
 import com.megacrit.cardcrawl.cards.green.Burst;
-import com.megacrit.cardcrawl.cards.red.Rage;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 

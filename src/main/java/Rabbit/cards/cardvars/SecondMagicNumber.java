@@ -1,8 +1,8 @@
 package Rabbit.cards.cardvars;
 
+import Rabbit.cards.abstracts.AbstractEasyCard;
 import basemod.abstracts.DynamicVariable;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import Rabbit.cards.abstracts.AbstractEasyCard;
 
 import static Rabbit.MainModfile.makeID;
 

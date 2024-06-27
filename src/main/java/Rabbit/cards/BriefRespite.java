@@ -1,14 +1,10 @@
 package Rabbit.cards;
 
 import Rabbit.cardmods.CarrotMod;
-import Rabbit.cardmods.ExhaustMod;
 import Rabbit.cards.abstracts.AbstractClutchCard;
-import Rabbit.cards.abstracts.AbstractEasyCard;
 import Rabbit.util.Wiz;
 import basemod.helpers.CardModifierManager;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
-import com.megacrit.cardcrawl.cards.green.RiddleWithHoles;
 import com.megacrit.cardcrawl.cards.purple.Tranquility;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;

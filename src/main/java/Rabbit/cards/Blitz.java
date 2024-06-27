@@ -1,12 +1,9 @@
 package Rabbit.cards;
 
 import Rabbit.actions.AttackDamageRandomEnemyFollowupAction;
-import Rabbit.actions.JumpAction;
 import Rabbit.cards.abstracts.AbstractEasyCard;
-import Rabbit.powers.NextTurnDamagePower;
 import Rabbit.util.Wiz;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.red.Headbutt;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;

@@ -1,9 +1,9 @@
 package Rabbit.relics;
 
+import Rabbit.util.TexLoader;
 import basemod.abstracts.CustomRelic;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
-import Rabbit.util.TexLoader;
 
 import static Rabbit.MainModfile.makeRelicPath;
 import static Rabbit.MainModfile.modID;

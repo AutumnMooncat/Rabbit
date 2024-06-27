@@ -2,7 +2,6 @@ package Rabbit.cards;
 
 import Rabbit.actions.ScaleAllByPredAction;
 import Rabbit.cards.abstracts.AbstractClutchCard;
-import Rabbit.cards.abstracts.AbstractEasyCard;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;

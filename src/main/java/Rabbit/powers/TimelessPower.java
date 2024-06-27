@@ -1,15 +1,13 @@
 package Rabbit.powers;
 
 import Rabbit.MainModfile;
-import Rabbit.actions.JumpAction;
 import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.OnReceivePowerPower;
 import com.evacipated.cardcrawl.modthespire.Loader;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.*;
+import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
-import com.megacrit.cardcrawl.powers.*;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import javassist.CannotCompileException;
 import javassist.CtClass;
 import javassist.CtMethod;

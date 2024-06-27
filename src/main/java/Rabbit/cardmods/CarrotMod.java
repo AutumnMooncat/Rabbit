@@ -4,7 +4,6 @@ import Rabbit.MainModfile;
 import Rabbit.powers.FervorPower;
 import Rabbit.util.KeywordManager;
 import Rabbit.util.TexLoader;
-import Rabbit.util.TextureScaler;
 import Rabbit.util.Wiz;
 import basemod.BaseMod;
 import basemod.abstracts.AbstractCardModifier;
@@ -16,10 +15,7 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.evacipated.cardcrawl.mod.stslib.util.extraicons.ExtraIcons;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
-import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.screens.SingleCardViewPopup;
 
 import java.util.ArrayList;

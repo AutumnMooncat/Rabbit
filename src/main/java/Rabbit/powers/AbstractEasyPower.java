@@ -1,11 +1,11 @@
 package Rabbit.powers;
 
 import Rabbit.MainModfile;
+import Rabbit.util.TexLoader;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import Rabbit.util.TexLoader;
 
 public abstract class AbstractEasyPower extends AbstractPower {
     public AbstractEasyPower(String NAME, PowerType powerType, boolean isTurnBased, AbstractCreature owner, int amount) {
