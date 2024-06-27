@@ -16,18 +16,16 @@ public class Braveheart extends AbstractEasyCard {
 
     public Braveheart() {
         super(ID, 0, CardType.SKILL, CardRarity.BASIC, CardTarget.SELF);
-        baseMagicNumber = magicNumber = 2;
         CardModifierManager.addModifier(this, new CarrotMod(2));
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        Wiz.applyToSelf(new VigorPower(p, magicNumber));
+        Wiz.applyToSelf(new VigorPower(p, Wiz.carrotCount(this)));
     }
 
     @Override
     public void upp() {
-        upgradeMagicNumber(1);
         CardModifierManager.addModifier(this, new CarrotMod(1));
     }
 

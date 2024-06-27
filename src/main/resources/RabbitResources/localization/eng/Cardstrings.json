@@ -31,7 +31,7 @@
   },
   "${ModID}:Braveheart": {
     "NAME": "Braveheart",
-    "DESCRIPTION": "Gain !M! Vigor."
+    "DESCRIPTION": "Gain [${ModID}:CarrotIcon] Vigor."
   },
   "${ModID}:BriefRespite": {
     "NAME": "Brief Respite",
