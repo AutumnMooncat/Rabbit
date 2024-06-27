@@ -1,0 +1,102 @@
+{
+  "${ModID}:LosePowerPower": {
+    "NAME": "Lose ",
+    "DESCRIPTIONS": ["At the end of your turn, lose #b"," ","."]
+  },
+  "${ModID}:LosePowerLaterPower": {
+    "NAME": "Lose ",
+    "DESCRIPTIONS": ["At the end of your turn, lose #b"," ","."]
+  },
+  "${ModID}:NextTurnPowerPower": {
+    "NAME": "Next Turn ",
+    "DESCRIPTIONS": ["Next turn, gain #b"," ","."]
+  },
+  "${ModID}:BracedPower": {
+    "NAME": "Braced",
+    "DESCRIPTIONS": ["Your next #yBlock gaining card gains #b"," additional #yBlock."]
+  },
+  "${ModID}:ExposedPower": {
+    "NAME": "Exposed",
+    "DESCRIPTIONS": ["Takes #b"," more damage from Attacks this turn."]
+  },
+  "${ModID}:StaggerPower": {
+    "NAME": "Staggered",
+    "DESCRIPTIONS": ["Deals #b"," less damage with Attacks this turn."]
+  },
+  "${ModID}:CardToHandPower": {
+    "NAME": " Next Turn",
+    "DESCRIPTIONS": ["Next turn, add "," into your hand."," copies of "]
+  },
+  "${ModID}:StrikeBuffPower": {
+    "NAME": "Strike Up",
+    "DESCRIPTIONS": ["Cards containing #yStrike deal #b"," additional damage."]
+  },
+  "${ModID}:CounterPower": {
+    "NAME": "Counter",
+    "DESCRIPTIONS": ["The next time you are attacked, deal #b"," damage back."]
+  },
+  "${ModID}:FervorPower": {
+    "NAME": "Fervor",
+    "DESCRIPTIONS": ["When you obtain #b10 #yFervor, your next #yAttack deals double damage."]
+  },
+  "${ModID}:DeathblowPower": {
+    "NAME": "Deathblow",
+    "DESCRIPTIONS": ["This creature dies when it has #b"," or less HP."]
+  },
+  "${ModID}:NextTurnDamagePower": {
+    "NAME": "Next Turn Damage",
+    "DESCRIPTIONS": ["Deal #b"," damage to "," next turn."]
+  },
+  "${ModID}:NextTurnJumpPower": {
+    "NAME": "Next Turn Jump",
+    "DESCRIPTIONS": ["At the start of your next turn, #yJump.","At the start of your next turn, #yJump #b"," times."]
+  },
+  "${ModID}:FuryPower": {
+    "NAME": "Fury Power",
+    "DESCRIPTIONS": ["Whenever you trigger a #yCounter, gain #b"," #yFervor."]
+  },
+  "${ModID}:VibrationPower": {
+    "NAME": "Vibrations",
+    "DESCRIPTIONS": ["Whenever you play an #yEcho, gain #b"," #yBlock."]
+  },
+  "${ModID}:SpringLoadedPower": {
+    "NAME": "Spring-Loaded",
+    "DESCRIPTIONS": ["Whenever you #yJump, deal #b"," damage to ALL enemies."]
+  },
+  "${ModID}:SmokescreenPower": {
+    "NAME": "Smokescreen",
+    "DESCRIPTIONS": ["Whenever a card is #yExhausted, ALL enemies lose #b"," #yStrength this turn."]
+  },
+  "${ModID}:FatalSlashPower": {
+    "NAME": "Fatal Slash",
+    "DESCRIPTIONS": ["Whenever you deal unblocked attack damage, apply #b"," #yDeathblow."]
+  },
+  "${ModID}:BloodlustPower": {
+    "NAME": "Bloodlust",
+    "DESCRIPTIONS": ["Whenever you apply a debuff to an enemy, gain #b"," #yFervor."]
+  },
+  "${ModID}:SnackPower": {
+    "NAME": "Snack",
+    "DESCRIPTIONS": ["Whenever you place #yCarrots onto a card, gain #b"," #yStrength."]
+  },
+  "${ModID}:VelocityPower": {
+    "NAME": "Velocity",
+    "DESCRIPTIONS": ["At the start of your turn, #yJump.","At the start of your turn, #yJump #b"," times."]
+  },
+  "${ModID}:TimelessPower": {
+    "NAME": "Timeless",
+    "DESCRIPTIONS": ["Effects that happen next turn happen immediately.","Effects that happen next turn happen immediately #b"," times."]
+  },
+  "${ModID}:CirclesOfDeathPower": {
+    "NAME": "Circles of Death",
+    "DESCRIPTIONS": ["At the end of your turn, apply #b"," #yDeathblow to ALL enemies."]
+  },
+  "${ModID}:AshesToAshesPower": {
+    "NAME": "Ashes to Ashes",
+    "DESCRIPTIONS": ["Whenever a card is #yExhausted, deal #b"," damage to a random enemy."]
+  },
+  "${ModID}:BunkerFormPower": {
+    "NAME": "Bunker Form",
+    "DESCRIPTIONS": ["At the start of your turn, gain #yVigor equal to your leftover #yBlock.","At the start of your turn, gain #yVigor equal to #b"," times your leftover #yBlock."]
+  }
+}

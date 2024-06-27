@@ -1,0 +1,121 @@
+[
+  {
+    "ID": "braced",
+    "PROPER_NAME": "Braced",
+    "NAMES": [
+      "braced"
+    ],
+    "DESCRIPTION": "Your next #yBlock gaining card gains additional #yBlock."
+  },
+  {
+    "ID": "exposed",
+    "PROPER_NAME": "Exposed",
+    "NAMES": [
+      "expose",
+      "exposed"
+    ],
+    "DESCRIPTION": "Exposed creatures take more damage from Attacks this turn."
+  },
+  {
+    "ID": "stagger",
+    "PROPER_NAME": "Staggered",
+    "NAMES": [
+      "stagger",
+      "staggered"
+    ],
+    "DESCRIPTION": "Staggered creatures deal less damage with Attacks this turn."
+  },
+  {
+    "ID": "guide",
+    "PROPER_NAME": "Guide",
+    "NAMES": [
+      "guide",
+      "guided"
+    ],
+    "DESCRIPTION": "Place a card on top of your draw pile."
+  },
+  {
+    "ID": "clutch",
+    "PROPER_NAME": "Clutch",
+    "NAMES": [
+      "clutch",
+      "clutched"
+    ],
+    "DESCRIPTION": "Right Click to #rExhaust this card and trigger an effect."
+  },
+  {
+    "ID": "fervor",
+    "PROPER_NAME": "Fervor",
+    "NAMES": [
+      "fervor"
+    ],
+    "DESCRIPTION": "When you obtain #b10 #yFervor, your next #yAttack deals double damage."
+  },
+  {
+    "ID": "critical",
+    "PROPER_NAME": "Critical Hit",
+    "NAMES": [
+      "critical"
+    ],
+    "DESCRIPTION": "Trigger an effect if you have #b10 or more #yFervor."
+  },
+  {
+    "ID": "deathblow",
+    "PROPER_NAME": "Deathblow",
+    "NAMES": [
+      "deathblow"
+    ],
+    "DESCRIPTION": "Creatures with equal or more #yDeathblow than #yHP are killed."
+  },
+  {
+    "ID": "carrot",
+    "PROPER_NAME": "Carrot [${ModID}:CarrotIcon]",
+    "NAMES": [
+      "carrot",
+      "carrots"
+    ],
+    "DESCRIPTION": "Whenever you play a card with #yCarrots, gain equal #yFervor."
+  },
+  {
+    "ID": "jump",
+    "PROPER_NAME": "Jump",
+    "NAMES": [
+      "jump",
+      "jumped"
+    ],
+    "DESCRIPTION": "Draw a card. If it has a #yCarrot, #yJump again."
+  },
+  {
+    "ID": "transient",
+    "PROPER_NAME": "Transient",
+    "NAMES": [
+      "transient"
+    ],
+    "DESCRIPTION": "#yTransient cards do not exist in your master deck."
+  },
+  {
+    "ID": "corporeal",
+    "PROPER_NAME": "Corporeal",
+    "NAMES": [
+      "corporeal"
+    ],
+    "DESCRIPTION": "#yCorporeal cards exist in your master deck."
+  },
+  {
+    "ID": "echo",
+    "PROPER_NAME": "Echo",
+    "NAMES": [
+      "echo",
+      "echoes"
+    ],
+    "DESCRIPTION": "#yEchoes are copies of a card with #yEthereal and #yExhaust."
+  },
+  {
+    "ID": "counter",
+    "PROPER_NAME": "Counter",
+    "NAMES": [
+      "counter"
+    ],
+    "DESCRIPTION": "The next time you are attacked, deal damage back."
+  }
+]

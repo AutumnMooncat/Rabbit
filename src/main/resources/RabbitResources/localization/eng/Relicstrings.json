@@ -1,0 +1,18 @@
+{
+  "${ModID}:Foresight": {
+    "NAME": "Foresight",
+    "FLAVOR": "Foils the target's efforts to heighten evasiveness.",
+    "DESCRIPTIONS": [
+      "Replaces [#c69d6c]Glasses. Whenever you play a card, gain #b1 #y${ModID}:Fervor.",
+      "Fervor gained: "," NL Per turn: "," NL Per combat: "
+    ]
+  },
+  "${ModID}:Glasses": {
+    "NAME": "Glasses",
+    "FLAVOR": "Helps you land a critical hit.",
+    "DESCRIPTIONS": [
+      "Whenever you play an #yAttack, gain #b1 #y${ModID}:Fervor.",
+      "Fervor gained: "," NL Per turn: "," NL Per combat: "
+    ]
+  }
+}

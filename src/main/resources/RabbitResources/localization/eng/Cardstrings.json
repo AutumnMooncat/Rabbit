@@ -1,0 +1,330 @@
+{
+  "${ModID}:ExampleCard": {
+    "NAME": "Name",
+    "DESCRIPTION": "Main description",
+    "UPGRADE_DESCRIPTION": "Upgrade description",
+    "EXTENDED_DESCRIPTION": ["Extra Stuff"]
+  },
+  "${ModID}:Advantage": {
+    "NAME": "Advantage",
+    "DESCRIPTION": "Next turn, ${ModID}:Jump and gain {@@}{!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]} ."
+  },
+  "${ModID}:AshesToAshes": {
+    "NAME": "Ashes to Ashes",
+    "DESCRIPTION": "Whenever a card is Exhausted, deal !M! damage to a random enemy."
+  },
+  "${ModID}:BladeBlast": {
+    "NAME": "Blade Blast",
+    "DESCRIPTION": "Add !M! modified *Strikes into your hand."
+  },
+  "${ModID}:BlastFromThePast": {
+    "NAME": "Blast from the Past",
+    "DESCRIPTION": "Retain. NL Deal !D! damage. NL When Retained, add an ${ModID}:Echo of this into your hand."
+  },
+  "${ModID}:Blitz": {
+    "NAME": "Blitz",
+    "DESCRIPTION": "Deal !D! damage and apply 1 Weak to a random enemy !M! times."
+  },
+  "${ModID}:Bloodlust": {
+    "NAME": "Bloodlust",
+    "DESCRIPTION": "Whenever you apply a debuff to an enemy, gain !M! ${ModID}:Fervor."
+  },
+  "${ModID}:Braveheart": {
+    "NAME": "Braveheart",
+    "DESCRIPTION": "Gain !M! Vigor."
+  },
+  "${ModID}:BriefRespite": {
+    "NAME": "Brief Respite",
+    "DESCRIPTION": "Next turn, NL gain {@@}{!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]} . NL ${ModID}:Clutch: Gain {!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]} ."
+  },
+  "${ModID}:BunkerForm": {
+    "NAME": "Bunker Form",
+    "DESCRIPTION": "Ethereal. NL At the start of your turn, gain Vigor equal to your leftover Block.",
+    "UPGRADE_DESCRIPTION": "At the start of your turn, gain Vigor equal to your leftover Block."
+  },
+  "${ModID}:BunnyHop": {
+    "NAME": "Bunny Hop",
+    "DESCRIPTION": "${ModID}:Jump. NL Gain !B! Block. NL Next turn, ${ModID}:Jump."
+  },
+  "${ModID}:CarrotCracker": {
+    "NAME": "Carrot Cracker",
+    "DESCRIPTION": "Deal !D! damage. NL Apply [${ModID}:CarrotIcon] Vulnerable."
+  },
+  "${ModID}:CastOff": {
+    "NAME": "Cast Off",
+    "DESCRIPTION": "Exhaust an Attack. NL Gain ${ModID}:Counter equal to its damage. NL ${ModID}:Clutch: Gain !M! ${ModID}:Counter"
+  },
+  "${ModID}:ChargeUp": {
+    "NAME": "Charge Up",
+    "DESCRIPTION": "Next turn, gain !B! Block and {@@}{!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]} ."
+  },
+  "${ModID}:CirclesOfDeath": {
+    "NAME": "Circles of Death",
+    "DESCRIPTION": "At the end of your turn, apply !M! ${ModID}:Deathblow to ALL enemies."
+  },
+  "${ModID}:Clairvoyance": {
+    "NAME": "Clairvoyance",
+    "DESCRIPTION": "Make an ${ModID}:Echo of the top !M! cards in your draw pile. Add them into your hand."
+  },
+  "${ModID}:ClutchClaw": {
+    "NAME": "Clutch Claw",
+    "DESCRIPTION": "Deal !D! damage. NL ${ModID}:Clutch: Increase the damage of ALL Clutch Claw cards by !M! this combat."
+  },
+  "${ModID}:Corporealize": {
+    "NAME": "Corporealize",
+    "DESCRIPTION": "Choose an ${ModID}:Echo in your exhaust pile. NL Add a copy to your hand without ${ModID}:Echo. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Choose an ${ModID}:Echo in your exhaust pile. NL Add a copy to your hand without ${ModID}:Echo.",
+    "EXTENDED_DESCRIPTION": ["Choose a card to Corporealize."]
+  },
+  "${ModID}:CrossBlades": {
+    "NAME": "Cross Blades",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! ${ModID}:Counter."
+  },
+  "${ModID}:CursedForge": {
+    "NAME": "Cursed Forge",
+    "DESCRIPTION": "Upgrade an Attack in your hand !M! times for the rest of combat. NL Bypasses Upgrade limitations."
+  },
+  "${ModID}:Defend": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block."
+  },
+  "${ModID}:DireStrike": {
+    "NAME": "Dire Strike",
+    "DESCRIPTION": "Deal !D! damage. NL If you have a debuff, deal !D! damage again."
+  },
+  "${ModID}:Dive": {
+    "NAME": "Dive Dive Dive",
+    "DESCRIPTION": "{@@}{!M!|3=${ModID}:Jump. ${ModID}:Jump. ${ModID}:Jump.|@=${ModID}:Jump !M! times.} NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Innate. NL {@@}{!M!|3=${ModID}:Jump. ${ModID}:Jump. ${ModID}:Jump.|@=${ModID}:Jump !M! times.} NL Exhaust."
+  },
+  "${ModID}:DiveBomb": {
+    "NAME": "Dive Bomb",
+    "DESCRIPTION": "Deal !D! damage. NL If you have ${ModID}:Jumped this turn, ${ModID}:Jump and gain [E] ."
+  },
+  "${ModID}:EchoingHymn": {
+    "NAME": "Echoing Hymn",
+    "DESCRIPTION": "Gain !B! Block. NL Make an ${ModID}:Echo of this in your discard pile."
+  },
+  "${ModID}:Etherealize": {
+    "NAME": "Etherealize",
+    "DESCRIPTION": "Gain !M! Intangible. NL Convert ALL your cards into ${ModID}:Echoes. NL Exhaust."
+  },
+  "${ModID}:Explosion": {
+    "NAME": "Explosion",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Weak. NL Apply !M! Vulnerable."
+  },
+  "${ModID}:ExtremeSpeed": {
+    "NAME": "Extreme Speed",
+    "DESCRIPTION": "Put X{@@}{!M!|>0= + !M!} random cards from your draw pile into your hand. NL They cost 0 this turn. NL Exhaust."
+  },
+  "${ModID}:FatalSlash": {
+    "NAME": "Fatal Slash",
+    "DESCRIPTION": "Whenever an Attack deals unblocked damage, apply !M! ${ModID}:Deathblow."
+  },
+  "${ModID}:FireBlast": {
+    "NAME": "Fire Blast",
+    "DESCRIPTION": "Deal !D! damage. NL Damage modifications affect this card twice."
+  },
+  "${ModID}:Firewall": {
+    "NAME": "Firewall",
+    "DESCRIPTION": "Gain !B! Block. NL ${ModID}:Clutch: Exhaust any number of cards in your hand."
+  },
+  "${ModID}:Flamethrower": {
+    "NAME": "Flamethrower",
+    "DESCRIPTION": "Unplayable. NL While in hand, deal !M! damage to ALL enemies whenever you play another card.",
+    "EXTENDED_DESCRIPTION": [
+      "I can't play this card."
+    ]
+  },
+  "${ModID}:FlipKick": {
+    "NAME": "Flip Kick",
+    "DESCRIPTION": "${ModID}:Jump. ${ModID}:Jump. NL Attacks drawn this way cost 0 this turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "${ModID}:Jump. ${ModID}:Jump. NL Attacks drawn this way cost 0 this turn."
+  },
+  "${ModID}:Flow": {
+    "NAME": "Flow",
+    "DESCRIPTION": "Unplayable. NL While in hand, gain !B! Block whenever you play another card.",
+    "EXTENDED_DESCRIPTION": [
+      "I can't play this card."
+    ]
+  },
+  "${ModID}:FocusSlash": {
+    "NAME": "Focus Slash",
+    "DESCRIPTION": "Deal !D! damage. NL Put an ${ModID}:Echo of this into your hand that costs 1 more and deals !M! additional damage."
+  },
+  "${ModID}:Fortified": {
+    "NAME": "Fortified",
+    "DESCRIPTION": "Gain !B! Block. NL Gain !M! Artifact. NL Exhaust."
+  },
+  "${ModID}:FromBeyond": {
+    "NAME": "From Beyond",
+    "DESCRIPTION": "Deal !D! damage. NL If this card is Exhausted, apply !M! ${ModID}:Deathblow to ALL enemies."
+  },
+  "${ModID}:Fury": {
+    "NAME": "Fury",
+    "DESCRIPTION": "Whenever you trigger a ${ModID}:Counter, gain !M! ${ModID}:Fervor."
+  },
+  "${ModID}:Gambit": {
+    "NAME": "Gambit",
+    "DESCRIPTION": "Deal !D! damage. NL Deals !M! additional damage for each time you lose HP this combat."
+  },
+  "${ModID}:GreatSword": {
+    "NAME": "Great Sword",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable. NL ${ModID}:Clutch: Gain !B! Block."
+  },
+  "${ModID}:Grow": {
+    "NAME": "Grow",
+    "DESCRIPTION": "Place !M! ${ModID}:Carrots onto the top card in your draw pile."
+  },
+  "${ModID}:Headhunter": {
+    "NAME": "Headhunter",
+    "DESCRIPTION": "Deal !D! damage and apply !M! Weak to ALL enemies."
+  },
+  "${ModID}:HelmBreaker": {
+    "NAME": "Helm Breaker",
+    "DESCRIPTION": "${ModID}:Jump. NL Deal !D! damage for each time you have ${ModID}:Jumped this turn.{@@}{!Location!|0= NL (Deals !${ModID}:I! damage.)}"
+  },
+  "${ModID}:Infusion": {
+    "NAME": "Infusion",
+    "DESCRIPTION": "Gain {@@}{!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]} . NL Next turn, gain {@@}{!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]} ."
+  },
+  "${ModID}:JumpingStrike": {
+    "NAME": "Jumping Strike",
+    "DESCRIPTION": "${ModID}:Jump. NL Deal !D! damage."
+  },
+  "${ModID}:Kris": {
+    "NAME": "Kris",
+    "DESCRIPTION": "Deal !D! damage. NL Deals triple damage to enemies with Block."
+  },
+  "${ModID}:Lethality": {
+    "NAME": "Lethality",
+    "DESCRIPTION": "Deal !D! damage. NL Deals additional damage equal to the enemy's ${ModID}:Deathblow."
+  },
+  "${ModID}:MagicSack": {
+    "NAME": "Magic Sack",
+    "DESCRIPTION": "Put a copy of 1 of !M! random cards from your draw pile into your hand. NL Exhaust."
+  },
+  "${ModID}:Plating": {
+    "NAME": "Plating",
+    "DESCRIPTION": "Gain !B! Block. NL ${ModID}:Clutch: Upgrade all cards in your hand for the rest of combat."
+  },
+  "${ModID}:Pluck": {
+    "NAME": "Pluck",
+    "DESCRIPTION": "Put [${ModID}:CarrotIcon] cards from your discard pile into your hand. Place a ${ModID}:Carrot on cards moved this way. NL Exhaust."
+  },
+  "${ModID}:PowerupPunch": {
+    "NAME": "Powerup Punch",
+    "DESCRIPTION": "Deal !D! damage. NL Gain [${ModID}:CarrotIcon] Strength. NL At the end of this turn, lose [${ModID}:CarrotIcon] Strength."
+  },
+  "${ModID}:QuickManeuver": {
+    "NAME": "Quick Maneuver",
+    "DESCRIPTION": "Gain !B! Block. NL Gain !M! Dexterity. NL At the end of this turn, lose !M! Dexterity."
+  },
+  "${ModID}:QuintessentialStrike": {
+    "NAME": "Quintessential Strike",
+    "DESCRIPTION": "Deal !D! damage. NL Cards containing \"Strike\" deal !M! additional damage this combat."
+  },
+  "${ModID}:Rally": {
+    "NAME": "Rally",
+    "DESCRIPTION": "{@@}{!M!|2=${ModID}:Jump. ${ModID}:Jump.|3=${ModID}:Jump. ${ModID}:Jump. ${ModID}:Jump.|@=${ModID}:Jump !M! times.} NL Place a ${ModID}:Carrot onto cards drawn this way."
+  },
+  "${ModID}:Roast": {
+    "NAME": "Roast",
+    "DESCRIPTION": "Place a ${ModID}:Carrot onto a card in your hand. NL Gain [E] for each card in your hand that has a ${ModID}:Carrot.",
+    "EXTENDED_DESCRIPTION": [
+      "Place a Carrot On"
+    ]
+  },
+  "${ModID}:Serendipity": {
+    "NAME": "Serendipity",
+    "DESCRIPTION": "Gain 8 Vigor. NL ${ModID}:Clutch: {@@}{!M!|1=${ModID}:Jump.|2=${ModID}:Jump. ${ModID}:Jump.|3=${ModID}:Jump. ${ModID}:Jump. ${ModID}:Jump.|@=${ModID}:Jump !M! times.}"
+  },
+  "${ModID}:SerratedEdge": {
+    "NAME": "Serrated Edge",
+    "DESCRIPTION": "Deal !D! damage. NL Next turn, deal !D! damage."
+  },
+  "${ModID}:Shatter": {
+    "NAME": "Shatter",
+    "DESCRIPTION": "Exhaust an Attack. NL Gain Vigor equal to twice its damage."
+  },
+  "${ModID}:ShrapnelShield": {
+    "NAME": "Shrapnel Shield",
+    "DESCRIPTION": "Gain !B! Block. NL Gain !M! Thorns. NL At the end of this turn, lose !M! Thorns."
+  },
+  "${ModID}:SinisterStrike": {
+    "NAME": "Sinister Strike",
+    "DESCRIPTION": "Deal !D! damage. NL Gain Vigor equal to unblocked damage dealt."
+  },
+  "${ModID}:SkullBash": {
+    "NAME": "Skull Bash",
+    "DESCRIPTION": "Next turn, deal !D! damage."
+  },
+  "${ModID}:Smokescreen": {
+    "NAME": "Smokescreen",
+    "DESCRIPTION": "Whenever a card is Exhausted, ALL enemies lose !M! Strength this turn."
+  },
+  "${ModID}:Snack": {
+    "NAME": "Snack",
+    "DESCRIPTION": "Whenever you place ${ModID}:Carrots onto a card, gain !M! Strength."
+  },
+  "${ModID}:Snipe": {
+    "NAME": "Snipe",
+    "DESCRIPTION": "Deal !D! damage twice. NL Apply ${ModID}:Deathblow equal to unblocked damage dealt."
+  },
+  "${ModID}:SoaringStrike": {
+    "NAME": "Soaring Strike",
+    "DESCRIPTION": "Deal !D! damage. NL If you have ${ModID}:Jumped this turn, gain {@@}{!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]} ."
+  },
+  "${ModID}:SpiritSlash": {
+    "NAME": "Spirit Slash",
+    "DESCRIPTION": "Apply !M! ${ModID}:Deathblow. NL Next turn, add a ${ModID}:Echo of this into your hand."
+  },
+  "${ModID}:SpringLoaded": {
+    "NAME": "Spring-Loaded",
+    "DESCRIPTION": "Whenever you ${ModID}:Jump, deal !M! damage to ALL enemies."
+  },
+  "${ModID}:Stasis": {
+    "NAME": "Stasis",
+    "DESCRIPTION": "Exhaust a card. NL Next turn, add !M! ${ModID}:Echoes of it into your hand."
+  },
+  "${ModID}:Strike": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+  "${ModID}:Subterfuge": {
+    "NAME": "Subterfuge",
+    "DESCRIPTION": "Unplayable. NL Whenever this card enters your draw pile, gain !M! ${ModID}:Counter.",
+    "EXTENDED_DESCRIPTION": [
+      "I can't play this card."
+    ]
+  },
+  "${ModID}:SweepingBlade": {
+    "NAME": "Sweeping Blade",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Shuffle an ${ModID}:Echo of this into your draw pile. NL Exhaust."
+  },
+  "${ModID}:Timeless": {
+    "NAME": "Timeless",
+    "DESCRIPTION": "Effects that happen next turn instead happen immediately."
+  },
+  "${ModID}:TimeOut": {
+    "NAME": "Time Out",
+    "DESCRIPTION": "Enemy loses !M! Strength this turn."
+  },
+  "${ModID}:Velocity": {
+    "NAME": "Velocity",
+    "DESCRIPTION": "At the start of your turn, ${ModID}:Jump{@@}{!M!|>1= !M! times}.",
+    "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn, ${ModID}:Jump{@@}{!M!|>1= !M! times}."
+  },
+  "${ModID}:Vibrations": {
+    "NAME": "Vibrations",
+    "DESCRIPTION": "Whenever you play an ${ModID}:Echo, gain !M! Block."
+  },
+  "${ModID}:WeaponsReady": {
+    "NAME": "Weapons Ready",
+    "DESCRIPTION": "Gain !B! Block. NL Gain !M! ${ModID}:Counter."
+  },
+  "${ModID}:YouAndWhatArmy": {
+    "NAME": "You and What Army",
+    "DESCRIPTION": ""
+  }
+}
