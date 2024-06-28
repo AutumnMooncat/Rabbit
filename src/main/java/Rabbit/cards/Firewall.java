@@ -14,7 +14,7 @@ public class Firewall extends AbstractClutchCard {
 
     public Firewall() {
         super(ID, 2, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.SELF);
-        baseBlock = block = 12;
+        baseBlock = block = 14;
     }
 
     @Override
