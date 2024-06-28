@@ -16,7 +16,7 @@ public class Corporealize extends AbstractEasyCard {
     public final static String ID = makeID(Corporealize.class.getSimpleName());
 
     public Corporealize() {
-        super(ID, 1, CardType.SKILL, CardRarity.RARE, CardTarget.NONE);
+        super(ID, 0, CardType.SKILL, CardRarity.RARE, CardTarget.NONE);
         exhaust = true;
     }
 
