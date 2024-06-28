@@ -170,7 +170,7 @@
   },
   "${ModID}:GreatSword": {
     "NAME": "Great Sword",
-    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable. NL ${ModID}:Clutch: Gain !B! Block."
+    "DESCRIPTION": "Deal !D! damage and apply !M! Vulnerable to ALL enemies. NL ${ModID}:Clutch: Gain !B! Block."
   },
   "${ModID}:Grow": {
     "NAME": "Grow",
