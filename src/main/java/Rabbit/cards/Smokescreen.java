@@ -13,7 +13,7 @@ public class Smokescreen extends AbstractEasyCard {
     public final static String ID = makeID(Smokescreen.class.getSimpleName());
 
     public Smokescreen() {
-        super(ID, 2, CardType.POWER, CardRarity.UNCOMMON, CardTarget.SELF);
+        super(ID, 1, CardType.POWER, CardRarity.UNCOMMON, CardTarget.SELF);
         baseMagicNumber = magicNumber = 1;
     }
 
@@ -24,7 +24,7 @@ public class Smokescreen extends AbstractEasyCard {
 
     @Override
     public void upp() {
-        upgradeBaseCost(1);
+        upgradeBaseCost(0);
     }
 
     @Override
