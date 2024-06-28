@@ -16,6 +16,7 @@ public class Infusion extends AbstractEasyCard {
     public Infusion() {
         super(ID, 1, CardType.SKILL, CardRarity.RARE, CardTarget.NONE);
         baseMagicNumber = magicNumber = 2;
+        exhaust = true;
     }
 
     @Override
