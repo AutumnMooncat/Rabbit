@@ -27,7 +27,7 @@ public class Roast extends AbstractEasyCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new BetterSelectCardsInHandAction(1, cardStrings.EXTENDED_DESCRIPTION[0], false, false, c -> c.cost >= -1, cards -> {
+        addToBot(new BetterSelectCardsInHandAction(1, cardStrings.EXTENDED_DESCRIPTION[0], false, false, c -> true, cards -> {
             for (AbstractCard card : cards) {
                 CardModifierManager.addModifier(card, new CarrotMod(1));
                 for (AbstractPower pow : p .powers) {
