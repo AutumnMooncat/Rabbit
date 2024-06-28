@@ -230,7 +230,7 @@
   },
   "${ModID}:Roast": {
     "NAME": "Roast",
-    "DESCRIPTION": "Place a ${ModID}:Carrot onto a card in your hand. NL Gain [E] for each card in your hand that has a ${ModID}:Carrot.",
+    "DESCRIPTION": "Place a ${ModID}:Carrot onto a card in your hand. NL Gain [${ModID}:CarrotIcon] Energy.",
     "EXTENDED_DESCRIPTION": [
       "Place a Carrot On"
     ]

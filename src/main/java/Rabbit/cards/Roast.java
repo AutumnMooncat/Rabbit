@@ -5,6 +5,7 @@ import Rabbit.actions.DoAction;
 import Rabbit.cardmods.CarrotMod;
 import Rabbit.cards.abstracts.AbstractEasyCard;
 import Rabbit.util.KeywordManager;
+import Rabbit.util.Wiz;
 import basemod.helpers.CardModifierManager;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -29,7 +30,8 @@ public class Roast extends AbstractEasyCard {
                 CardModifierManager.addModifier(card, new CarrotMod(1));
             }
         }));
-        addToBot(new DoAction(() -> {
+        addToBot(new GainEnergyAction(Wiz.carrotCount(this)));
+        /*addToBot(new DoAction(() -> {
             int carrots = 0;
             for (AbstractCard card : p.hand.group) {
                 if (CardModifierManager.hasModifier(card, CarrotMod.ID)) {
@@ -39,7 +41,7 @@ public class Roast extends AbstractEasyCard {
             if (carrots > 0) {
                 addToTop(new GainEnergyAction(carrots));
             }
-        }));
+        }));*/
     }
 
     @Override
@@ -50,7 +52,7 @@ public class Roast extends AbstractEasyCard {
 
     @Override
     public void upp() {
-        upgradeBaseCost(0);
+        CardModifierManager.addModifier(this, new CarrotMod(1));
     }
 
     @Override
