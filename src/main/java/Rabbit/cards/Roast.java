@@ -4,6 +4,7 @@ import Rabbit.actions.BetterSelectCardsInHandAction;
 import Rabbit.actions.DoAction;
 import Rabbit.cardmods.CarrotMod;
 import Rabbit.cards.abstracts.AbstractEasyCard;
+import Rabbit.powers.interfaces.OnPlaceCarrotsPower;
 import Rabbit.util.KeywordManager;
 import Rabbit.util.Wiz;
 import basemod.helpers.CardModifierManager;
@@ -12,6 +13,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.purple.WreathOfFlame;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 
 import static Rabbit.MainModfile.makeID;
 
@@ -28,6 +30,11 @@ public class Roast extends AbstractEasyCard {
         addToBot(new BetterSelectCardsInHandAction(1, cardStrings.EXTENDED_DESCRIPTION[0], false, false, c -> c.cost >= -1, cards -> {
             for (AbstractCard card : cards) {
                 CardModifierManager.addModifier(card, new CarrotMod(1));
+                for (AbstractPower pow : p .powers) {
+                    if (pow instanceof OnPlaceCarrotsPower) {
+                        ((OnPlaceCarrotsPower) pow).onPlaceCarrots(card, 1);
+                    }
+                }
             }
         }));
         addToBot(new GainEnergyAction(Wiz.carrotCount(this)));
