@@ -26,7 +26,7 @@ public class CastOff extends AbstractClutchCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new BetterSelectCardsInHandAction(1, ExhaustAction.TEXT[0], false, false, c -> c.type == CardType.ATTACK, cards -> {
             for (AbstractCard card : cards) {
-                Wiz.applyToSelfTop(new CounterPower(p, (int) CardModifierManager.onModifyBaseDamage(card.baseDamage, card, null)));
+                Wiz.applyToSelfTop(new CounterPower(p, 2 * (int) CardModifierManager.onModifyBaseDamage(card.baseDamage, card, null)));
                 addToTop(new ExhaustSpecificCardAction(card, p.hand));
             }
         }));

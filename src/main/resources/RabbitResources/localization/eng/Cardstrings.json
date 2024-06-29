@@ -52,7 +52,7 @@
   },
   "${ModID}:CastOff": {
     "NAME": "Cast Off",
-    "DESCRIPTION": "Exhaust an Attack. NL Gain ${ModID}:Counter equal to its damage. NL ${ModID}:Clutch: Gain !M! ${ModID}:Counter"
+    "DESCRIPTION": "Exhaust an Attack. NL Gain ${ModID}:Counter equal to twice its damage. NL ${ModID}:Clutch: Gain !M! ${ModID}:Counter"
   },
   "${ModID}:ChargeUp": {
     "NAME": "Charge Up",
