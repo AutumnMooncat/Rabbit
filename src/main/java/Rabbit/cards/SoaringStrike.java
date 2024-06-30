@@ -17,7 +17,7 @@ public class SoaringStrike extends AbstractEasyCard {
 
     public SoaringStrike() {
         super(ID, 2, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
-        baseDamage = damage = 12;
+        baseDamage = damage = 10;
         baseMagicNumber = magicNumber = 2;
         tags.add(CardTags.STRIKE);
     }
