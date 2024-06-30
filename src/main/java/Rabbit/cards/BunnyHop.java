@@ -17,7 +17,7 @@ public class BunnyHop extends AbstractEasyCard {
 
     public BunnyHop() {
         super(ID, 1, CardType.SKILL, CardRarity.COMMON, CardTarget.SELF);
-        baseBlock = block = 7;
+        baseBlock = block = 5;
         CardModifierManager.addModifier(this, new CarrotMod(1));
     }
 
