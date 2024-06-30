@@ -24,7 +24,7 @@ public class AshesToAshes extends AbstractEasyCard {
 
     @Override
     public void upp() {
-        upgradeBaseCost(2);
+        upgradeMagicNumber(2);
     }
 
     @Override
