@@ -20,7 +20,7 @@ public class Stasis extends AbstractEasyCard {
 
     public Stasis() {
         super(ID, 1, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.NONE);
-        baseMagicNumber = magicNumber = 2;
+        baseMagicNumber = magicNumber = 3;
     }
 
     @Override
@@ -39,7 +39,7 @@ public class Stasis extends AbstractEasyCard {
 
     @Override
     public void upp() {
-        upgradeMagicNumber(1);
+        upgradeBaseCost(0);
     }
 
     @Override
