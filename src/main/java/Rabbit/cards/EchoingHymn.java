@@ -16,7 +16,7 @@ public class EchoingHymn extends AbstractEasyCard {
 
     public EchoingHymn() {
         super(ID, 0, CardType.SKILL, CardRarity.COMMON, CardTarget.SELF);
-        baseBlock = block = 5;
+        baseBlock = block = 4;
     }
 
     @Override
