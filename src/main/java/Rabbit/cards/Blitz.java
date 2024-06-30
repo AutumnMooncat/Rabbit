@@ -16,7 +16,7 @@ public class Blitz extends AbstractEasyCard {
 
     public Blitz() {
         super(ID, 1, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ALL_ENEMY);
-        baseDamage = damage = 3;
+        baseDamage = damage = 2;
         baseMagicNumber = magicNumber = 3;
     }
 
@@ -33,7 +33,7 @@ public class Blitz extends AbstractEasyCard {
 
     @Override
     public void upp() {
-        upgradeMagicNumber(1);
+        upgradeDamage(1);
     }
 
     @Override
