@@ -23,7 +23,7 @@
   },
   "${ModID}:Blitz": {
     "NAME": "Blitz",
-    "DESCRIPTION": "Deal !D! damage and apply 1 Weak to a random enemy !M! times."
+    "DESCRIPTION": "Deal !D! damage and apply !M! Weak to a random enemy twice."
   },
   "${ModID}:Bloodlust": {
     "NAME": "Bloodlust",

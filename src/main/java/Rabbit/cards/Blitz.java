@@ -16,24 +16,27 @@ public class Blitz extends AbstractEasyCard {
 
     public Blitz() {
         super(ID, 1, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ALL_ENEMY);
-        baseDamage = damage = 2;
-        baseMagicNumber = magicNumber = 3;
+        baseDamage = damage = 5;
+        baseMagicNumber = magicNumber = 1;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        for (int i = 0 ; i < magicNumber ; i++) {
-            addToBot(new AttackDamageRandomEnemyFollowupAction(this, AbstractGameAction.AttackEffect.BLUNT_LIGHT, mon -> {
-                if (mon instanceof AbstractMonster) {
-                    Wiz.applyToEnemyTop((AbstractMonster) mon, new WeakPower(mon, 1, false));
-                }
-            }));
-        }
+        addToBot(new AttackDamageRandomEnemyFollowupAction(this, AbstractGameAction.AttackEffect.BLUNT_LIGHT, mon -> {
+            if (mon instanceof AbstractMonster) {
+                Wiz.applyToEnemyTop((AbstractMonster) mon, new WeakPower(mon, magicNumber, false));
+            }
+        }));
+        addToBot(new AttackDamageRandomEnemyFollowupAction(this, AbstractGameAction.AttackEffect.BLUNT_LIGHT, mon -> {
+            if (mon instanceof AbstractMonster) {
+                Wiz.applyToEnemyTop((AbstractMonster) mon, new WeakPower(mon, magicNumber, false));
+            }
+        }));
     }
 
     @Override
     public void upp() {
-        upgradeDamage(1);
+        upgradeDamage(2);
     }
 
     @Override
