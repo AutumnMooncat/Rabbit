@@ -261,7 +261,7 @@
   },
   "${ModID}:Smokescreen": {
     "NAME": "Smokescreen",
-    "DESCRIPTION": "Whenever a card is Exhausted, ALL enemies lose !M! Strength this turn."
+    "DESCRIPTION": "Whenever a card is Exhausted, gain !M! Block."
   },
   "${ModID}:Snack": {
     "NAME": "Snack",

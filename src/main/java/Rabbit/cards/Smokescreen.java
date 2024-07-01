@@ -14,7 +14,7 @@ public class Smokescreen extends AbstractEasyCard {
 
     public Smokescreen() {
         super(ID, 1, CardType.POWER, CardRarity.UNCOMMON, CardTarget.SELF);
-        baseMagicNumber = magicNumber = 1;
+        baseMagicNumber = magicNumber = 3;
     }
 
     @Override

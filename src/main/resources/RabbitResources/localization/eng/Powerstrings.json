@@ -65,7 +65,7 @@
   },
   "${ModID}:SmokescreenPower": {
     "NAME": "Smokescreen",
-    "DESCRIPTIONS": ["Whenever a card is #yExhausted, ALL enemies lose #b"," #yStrength this turn."]
+    "DESCRIPTIONS": ["Whenever a card is #yExhausted, gain #b"," #yBlock."]
   },
   "${ModID}:FatalSlashPower": {
     "NAME": "Fatal Slash",
