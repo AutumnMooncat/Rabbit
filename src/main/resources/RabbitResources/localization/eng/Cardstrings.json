@@ -52,7 +52,7 @@
   },
   "${ModID}:CastOff": {
     "NAME": "Cast Off",
-    "DESCRIPTION": "Exhaust an Attack. NL Gain ${ModID}:Counter equal to twice its damage. NL ${ModID}:Clutch: Gain !M! ${ModID}:Counter"
+    "DESCRIPTION": "Discard up to !M! cards. NL Gain !B! Block for each card discarded. NL ${ModID}:Clutch: Gain !${ModID}:M2! Vigor."
   },
   "${ModID}:ChargeUp": {
     "NAME": "Charge Up",

@@ -4,9 +4,7 @@ import Rabbit.actions.BetterSelectCardsInHandAction;
 import Rabbit.cards.abstracts.AbstractClutchCard;
 import Rabbit.powers.CounterPower;
 import Rabbit.util.Wiz;
-import basemod.helpers.CardModifierManager;
-import com.megacrit.cardcrawl.actions.common.ExhaustAction;
-import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
+import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.green.Concentrate;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -19,22 +17,26 @@ public class CastOff extends AbstractClutchCard {
 
     public CastOff() {
         super(ID, 1, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.NONE);
-        baseMagicNumber = magicNumber = 7;
+        baseMagicNumber = magicNumber = 2;
+        baseSecondMagic = secondMagic = 4;
+        baseBlock = block = 4;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new BetterSelectCardsInHandAction(1, ExhaustAction.TEXT[0], false, false, c -> c.type == CardType.ATTACK, cards -> {
+        addToBot(new BetterSelectCardsInHandAction(magicNumber, DiscardAction.TEXT[0], true, true, c -> true, cards -> {
             for (AbstractCard card : cards) {
-                Wiz.applyToSelfTop(new CounterPower(p, 2 * (int) CardModifierManager.onModifyBaseDamage(card.baseDamage, card, null)));
-                addToTop(new ExhaustSpecificCardAction(card, p.hand));
+                addToTop(new GainBlockAction(p, block));
+                addToTop(new DiscardSpecificCardAction(card, p.hand));
             }
         }));
     }
 
     @Override
     public void upp() {
-        upgradeBaseCost(0);
+        //upgradeMagicNumber(1);
+        upgradeBlock(2);
+        upgradeSecondMagic(2);
     }
 
     @Override
@@ -44,6 +46,6 @@ public class CastOff extends AbstractClutchCard {
 
     @Override
     public void onClutch() {
-        Wiz.applyToSelf(new CounterPower(Wiz.adp(), magicNumber));
+        Wiz.applyToSelf(new CounterPower(Wiz.adp(), secondMagic));
     }
 }
