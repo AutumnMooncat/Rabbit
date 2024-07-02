@@ -138,8 +138,8 @@
   },
   "${ModID}:FlipKick": {
     "NAME": "Flip Kick",
-    "DESCRIPTION": "${ModID}:Jump. ${ModID}:Jump. NL Attacks drawn this way cost 0 this turn. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "${ModID}:Jump. ${ModID}:Jump. NL Attacks drawn this way cost 0 this turn."
+    "DESCRIPTION": "${ModID}:Jump. ${ModID}:Jump. NL The next Attack you play costs 0. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "${ModID}:Jump. ${ModID}:Jump. NL The next Attack you play costs 0."
   },
   "${ModID}:Flow": {
     "NAME": "Flow",

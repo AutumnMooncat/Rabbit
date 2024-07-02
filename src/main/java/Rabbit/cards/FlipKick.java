@@ -1,12 +1,12 @@
 package Rabbit.cards;
 
-import Rabbit.actions.DoAction;
 import Rabbit.actions.JumpAction;
 import Rabbit.cards.abstracts.AbstractEasyCard;
-import com.megacrit.cardcrawl.cards.AbstractCard;
+import Rabbit.util.Wiz;
 import com.megacrit.cardcrawl.cards.green.Acrobatics;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.watcher.FreeAttackPower;
 
 import static Rabbit.MainModfile.makeID;
 
@@ -21,13 +21,7 @@ public class FlipKick extends AbstractEasyCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new JumpAction(2));
-        addToBot(new DoAction(() -> {
-            for (AbstractCard card : JumpAction.drawnCards) {
-                if (card.type == CardType.ATTACK) {
-                    card.setCostForTurn(0);
-                }
-            }
-        }));
+        Wiz.applyToSelf(new FreeAttackPower(p, 1));
     }
 
     @Override
