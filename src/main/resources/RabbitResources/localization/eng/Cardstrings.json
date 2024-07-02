@@ -162,7 +162,7 @@
   },
   "${ModID}:Fury": {
     "NAME": "Fury",
-    "DESCRIPTION": "Whenever you trigger a ${ModID}:Counter, gain !M! ${ModID}:Fervor."
+    "DESCRIPTION": "Whenever you lose HP, gain !M! ${ModID}:Fervor."
   },
   "${ModID}:Gambit": {
     "NAME": "Gambit",

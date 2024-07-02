@@ -3,12 +3,13 @@ package Rabbit.powers;
 import Rabbit.MainModfile;
 import Rabbit.powers.interfaces.OnCounterPower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
-public class FuryPower extends AbstractPower implements OnCounterPower {
+public class FuryPower extends AbstractPower {
     public static final String POWER_ID = MainModfile.makeID(FuryPower.class.getSimpleName());
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
@@ -30,8 +31,10 @@ public class FuryPower extends AbstractPower implements OnCounterPower {
     }
 
     @Override
-    public void onCounter(AbstractCreature target, int damage) {
-        flash();
-        addToBot(new ApplyPowerAction(owner, owner, new FervorPower(owner, amount)));
+    public void wasHPLost(DamageInfo info, int damageAmount) {
+        if (damageAmount > 0) {
+            flash();
+            addToBot(new ApplyPowerAction(owner, owner, new FervorPower(owner, amount)));
+        }
     }
 }

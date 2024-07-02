@@ -53,7 +53,7 @@
   },
   "${ModID}:FuryPower": {
     "NAME": "Fury Power",
-    "DESCRIPTIONS": ["Whenever you trigger a #yCounter, gain #b"," #yFervor."]
+    "DESCRIPTIONS": ["Whenever you lose HP, gain #b"," #yFervor."]
   },
   "${ModID}:VibrationPower": {
     "NAME": "Vibrations",
