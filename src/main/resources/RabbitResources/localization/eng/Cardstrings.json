@@ -78,7 +78,7 @@
   },
   "${ModID}:CrossBlades": {
     "NAME": "Cross Blades",
-    "DESCRIPTION": "Deal !D! damage. NL Gain !M! ${ModID}:Counter."
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Weak."
   },
   "${ModID}:CursedForge": {
     "NAME": "Cursed Forge",
