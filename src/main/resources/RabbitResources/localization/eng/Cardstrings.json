@@ -293,7 +293,7 @@
   },
   "${ModID}:Subterfuge": {
     "NAME": "Subterfuge",
-    "DESCRIPTION": "Unplayable. NL Whenever this card enters your draw pile, gain !M! ${ModID}:Counter.",
+    "DESCRIPTION": "ALL enemies lose !M! Strength this turn.",
     "EXTENDED_DESCRIPTION": [
       "I can't play this card."
     ]
@@ -321,7 +321,7 @@
   },
   "${ModID}:WeaponsReady": {
     "NAME": "Weapons Ready",
-    "DESCRIPTION": "Gain !B! Block. NL Gain !M! ${ModID}:Counter."
+    "DESCRIPTION": "Gain !B! Block. NL The next time you are attacked, deal !M! damage back."
   },
   "${ModID}:YouAndWhatArmy": {
     "NAME": "You and What Army",
