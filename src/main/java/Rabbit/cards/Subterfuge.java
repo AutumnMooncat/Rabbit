@@ -30,7 +30,7 @@ public class Subterfuge extends AbstractEasyCard {
 
     @Override
     public void upp() {
-        upgradeMagicNumber(1);
+        upgradeMagicNumber(2);
     }
 
     @Override
