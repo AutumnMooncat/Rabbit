@@ -69,7 +69,7 @@
   },
   "${ModID}:FatalSlashPower": {
     "NAME": "Fatal Slash",
-    "DESCRIPTIONS": ["Whenever you deal unblocked attack damage, apply #b"," #yDeathblow."]
+    "DESCRIPTIONS": ["Whenever you deal unblocked attack damage, apply #b"," #yBleed."]
   },
   "${ModID}:BloodlustPower": {
     "NAME": "Bloodlust",

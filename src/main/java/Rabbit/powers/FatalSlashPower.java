@@ -33,7 +33,7 @@ public class FatalSlashPower extends AbstractPower {
     public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
         if (damageAmount > 0 && target != owner && info.type == DamageInfo.DamageType.NORMAL) {
             flash();
-            addToTop(new ApplyPowerAction(target, owner, new DeathblowPower(target, amount), amount, true));
+            addToTop(new ApplyPowerAction(target, owner, new BleedingPower(target, owner, amount), amount, true));
         }
     }
 }
