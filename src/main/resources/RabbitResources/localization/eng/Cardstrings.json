@@ -60,7 +60,7 @@
   },
   "${ModID}:CirclesOfDeath": {
     "NAME": "Circles of Death",
-    "DESCRIPTION": "At the end of your turn, apply !M! ${ModID}:Deathblow to ALL enemies."
+    "DESCRIPTION": "At the end of your turn, apply !M! ${ModID}:Bleed to ALL enemies."
   },
   "${ModID}:Clairvoyance": {
     "NAME": "Clairvoyance",
@@ -119,7 +119,7 @@
   },
   "${ModID}:FatalSlash": {
     "NAME": "Fatal Slash",
-    "DESCRIPTION": "Whenever an Attack deals unblocked damage, apply !M! ${ModID}:Deathblow."
+    "DESCRIPTION": "Whenever an Attack deals unblocked damage, apply !M! ${ModID}:Bleed."
   },
   "${ModID}:FireBlast": {
     "NAME": "Fire Blast",
@@ -158,7 +158,7 @@
   },
   "${ModID}:FromBeyond": {
     "NAME": "From Beyond",
-    "DESCRIPTION": "Deal !D! damage. NL If this card is Exhausted, apply !M! ${ModID}:Deathblow to ALL enemies."
+    "DESCRIPTION": "Deal !D! damage. NL If this card is Exhausted, apply !M! ${ModID}:Bleed to ALL enemies."
   },
   "${ModID}:Fury": {
     "NAME": "Fury",
@@ -198,7 +198,7 @@
   },
   "${ModID}:Lethality": {
     "NAME": "Lethality",
-    "DESCRIPTION": "Deal !D! damage. NL Deals additional damage equal to the enemy's ${ModID}:Deathblow."
+    "DESCRIPTION": "Deal !D! damage. NL Deals additional damage equal to the enemy's ${ModID}:Bleed."
   },
   "${ModID}:MagicSack": {
     "NAME": "Magic Sack",
@@ -241,7 +241,7 @@
   },
   "${ModID}:SerratedEdge": {
     "NAME": "Serrated Edge",
-    "DESCRIPTION": "Deal !D! damage. NL Next turn, deal !D! damage."
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! ${ModID}:Bleed."
   },
   "${ModID}:Shatter": {
     "NAME": "Shatter",
@@ -269,7 +269,7 @@
   },
   "${ModID}:Snipe": {
     "NAME": "Snipe",
-    "DESCRIPTION": "Deal !D! damage twice. NL Apply ${ModID}:Deathblow equal to unblocked damage dealt."
+    "DESCRIPTION": "Deal !D! damage twice. NL Apply ${ModID}:Bleed equal to unblocked damage dealt."
   },
   "${ModID}:SoaringStrike": {
     "NAME": "Soaring Strike",
@@ -277,7 +277,7 @@
   },
   "${ModID}:SpiritSlash": {
     "NAME": "Spirit Slash",
-    "DESCRIPTION": "Apply !M! ${ModID}:Deathblow. NL Next turn, add a ${ModID}:Echo of this into your hand."
+    "DESCRIPTION": "Apply !M! ${ModID}:Bleed. NL Next turn, add a ${ModID}:Echo of this into your hand."
   },
   "${ModID}:SpringLoaded": {
     "NAME": "Spring-Loaded",

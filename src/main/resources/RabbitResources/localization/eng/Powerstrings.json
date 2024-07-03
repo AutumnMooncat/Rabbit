@@ -89,7 +89,7 @@
   },
   "${ModID}:CirclesOfDeathPower": {
     "NAME": "Circles of Death",
-    "DESCRIPTIONS": ["At the end of your turn, apply #b"," #yDeathblow to ALL enemies."]
+    "DESCRIPTIONS": ["At the end of your turn, apply #b"," #yBleed to ALL enemies."]
   },
   "${ModID}:AshesToAshesPower": {
     "NAME": "Ashes to Ashes",

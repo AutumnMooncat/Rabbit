@@ -31,6 +31,6 @@ public class CirclesOfDeathPower extends AbstractPower {
     @Override
     public void atEndOfTurn(boolean isPlayer) {
         flash();
-        Wiz.forAllMonstersLiving(mon -> Wiz.applyToEnemy(mon, new DeathblowPower(mon, amount)));
+        Wiz.forAllMonstersLiving(mon -> Wiz.applyToEnemy(mon, new BleedingPower(mon, owner, amount)));
     }
 }

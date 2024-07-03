@@ -14,7 +14,7 @@ public class CirclesOfDeath extends AbstractEasyCard {
 
     public CirclesOfDeath() {
         super(ID, 1, CardType.POWER, CardRarity.UNCOMMON, CardTarget.SELF);
-        baseMagicNumber = magicNumber = 4;
+        baseMagicNumber = magicNumber = 1;
     }
 
     @Override
@@ -24,7 +24,7 @@ public class CirclesOfDeath extends AbstractEasyCard {
 
     @Override
     public void upp() {
-        upgradeMagicNumber(2);
+        upgradeMagicNumber(1);
     }
 
     @Override
