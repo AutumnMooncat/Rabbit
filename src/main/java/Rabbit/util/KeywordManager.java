@@ -19,6 +19,7 @@ public class KeywordManager {
     public static String CORPOREAL;
     public static String ECHO;
     public static String COUNTER;
+    public static String BLEED;
 
     public static String getKeyword(String ID) {
         return keywordMap.getOrDefault(ID, "");

@@ -98,5 +98,9 @@
   "${ModID}:BunkerFormPower": {
     "NAME": "Bunker Form",
     "DESCRIPTIONS": ["At the start of your turn, gain #yVigor equal to your leftover #yBlock.","At the start of your turn, gain #yVigor equal to #b"," times your leftover #yBlock."]
+  },
+  "${ModID}:BleedingPower": {
+    "NAME": "Bleeding",
+    "DESCRIPTIONS": ["Whenever this creature attacks, it loses #b"," HP."]
   }
 }

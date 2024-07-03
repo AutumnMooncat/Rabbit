@@ -117,5 +117,14 @@
       "counter"
     ],
     "DESCRIPTION": "The next time you are attacked, deal damage back."
+  },
+  {
+    "ID": "bleed",
+    "PROPER_NAME": "Bleeding",
+    "NAMES": [
+      "bleed",
+      "bleeding"
+    ],
+    "DESCRIPTION": "#yBleeding creatures lose HP whenever they attack."
   }
 ]
