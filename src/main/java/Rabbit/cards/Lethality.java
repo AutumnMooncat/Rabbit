@@ -1,6 +1,7 @@
 package Rabbit.cards;
 
 import Rabbit.cards.abstracts.AbstractEasyCard;
+import Rabbit.powers.BleedingPower;
 import Rabbit.powers.DeathblowPower;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
@@ -33,7 +34,7 @@ public class Lethality extends AbstractEasyCard {
     @Override
     public void calculateCardDamage(AbstractMonster mo) {
         int base = baseDamage;
-        AbstractPower pow = mo.getPower(DeathblowPower.POWER_ID);
+        AbstractPower pow = mo.getPower(BleedingPower.POWER_ID);
         if (pow != null) {
             baseDamage += pow.amount;
         }
