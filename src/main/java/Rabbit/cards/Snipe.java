@@ -2,7 +2,7 @@ package Rabbit.cards;
 
 import Rabbit.actions.DamageFollowupAction;
 import Rabbit.cards.abstracts.AbstractEasyCard;
-import Rabbit.powers.DeathblowPower;
+import Rabbit.powers.BleedingPower;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -17,19 +17,19 @@ public class Snipe extends AbstractEasyCard {
 
     public Snipe() {
         super(ID, 2, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
-        baseDamage = damage = 5;
+        baseDamage = damage = 4;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageFollowupAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY, false, mon -> {
             if (mon.lastDamageTaken > 0) {
-                addToTop(new ApplyPowerAction(m, p, new DeathblowPower(m, mon.lastDamageTaken)));
+                addToTop(new ApplyPowerAction(m, p, new BleedingPower(m, p, mon.lastDamageTaken)));
             }
         }));
         addToBot(new DamageFollowupAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY, false, mon -> {
             if (mon.lastDamageTaken > 0) {
-                addToTop(new ApplyPowerAction(m, p, new DeathblowPower(m, mon.lastDamageTaken)));
+                addToTop(new ApplyPowerAction(m, p, new BleedingPower(m, p, mon.lastDamageTaken)));
             }
         }));
     }
