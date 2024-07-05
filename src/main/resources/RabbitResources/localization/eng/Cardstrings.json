@@ -281,7 +281,7 @@
   },
   "${ModID}:SpiritSlash": {
     "NAME": "Spirit Slash",
-    "DESCRIPTION": "Apply !M! ${ModID}:Bleed. NL Next turn, add a ${ModID}:Echo of this into your hand."
+    "DESCRIPTION": "Enemy loses !M! HP. NL Next turn, add a ${ModID}:Echo of this into your hand."
   },
   "${ModID}:SpringLoaded": {
     "NAME": "Spring-Loaded",

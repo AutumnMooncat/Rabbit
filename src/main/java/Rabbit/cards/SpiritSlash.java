@@ -8,6 +8,7 @@ import Rabbit.util.Wiz;
 import basemod.helpers.CardModifierManager;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.LoseHPAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.red.Havoc;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -20,12 +21,12 @@ public class SpiritSlash extends AbstractEasyCard {
 
     public SpiritSlash() {
         super(ID, 1, CardType.SKILL, CardRarity.COMMON, CardTarget.ENEMY);
-        baseMagicNumber = magicNumber = 4;
+        baseMagicNumber = magicNumber = 8;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(m, p, new BleedingPower(m, p, magicNumber), magicNumber, AbstractGameAction.AttackEffect.SLASH_HEAVY));
+        addToBot(new LoseHPAction(m, p, magicNumber, AbstractGameAction.AttackEffect.SLASH_HEAVY));
         AbstractCard copy = makeStatEquivalentCopy();
         if (!CardModifierManager.hasModifier(copy, EchoMod.ID)) {
             CardModifierManager.addModifier(copy, new EchoMod());
@@ -35,7 +36,7 @@ public class SpiritSlash extends AbstractEasyCard {
 
     @Override
     public void upp() {
-        upgradeMagicNumber(2);
+        upgradeMagicNumber(3);
     }
 
     @Override
