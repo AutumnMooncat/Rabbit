@@ -24,7 +24,7 @@ public class MoonbeamPower extends AbstractPower {
         this.owner = owner;
         this.amount = amount;
         this.type = PowerType.BUFF;
-        this.loadRegion("fasting");
+        this.loadRegion("focus");
         updateDescription();
     }
 
