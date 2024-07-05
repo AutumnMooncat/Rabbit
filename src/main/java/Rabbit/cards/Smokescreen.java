@@ -24,7 +24,7 @@ public class Smokescreen extends AbstractEasyCard {
 
     @Override
     public void upp() {
-        upgradeBaseCost(0);
+        upgradeMagicNumber(1);
     }
 
     @Override
