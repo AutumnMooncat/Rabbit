@@ -150,7 +150,7 @@
   },
   "${ModID}:FromBeyond": {
     "NAME": "From Beyond",
-    "DESCRIPTION": "Deal !D! damage. NL If this card is Exhausted, apply !M! ${ModID}:Bleed to ALL enemies."
+    "DESCRIPTION": "Deal !D! damage. NL If this card is Exhausted, ALL enemies lose !M! HP."
   },
   "${ModID}:Fury": {
     "NAME": "Fury",

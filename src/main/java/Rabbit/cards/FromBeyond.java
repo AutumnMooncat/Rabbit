@@ -1,9 +1,9 @@
 package Rabbit.cards;
 
 import Rabbit.cards.abstracts.AbstractEasyCard;
-import Rabbit.powers.BleedingPower;
 import Rabbit.util.Wiz;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.LoseHPAction;
 import com.megacrit.cardcrawl.cards.red.Exhume;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -16,7 +16,7 @@ public class FromBeyond extends AbstractEasyCard {
     public FromBeyond() {
         super(ID, 1, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
         baseDamage = damage = 12;
-        baseMagicNumber = magicNumber = 8;
+        baseMagicNumber = magicNumber = 12;
     }
 
     @Override
@@ -27,7 +27,7 @@ public class FromBeyond extends AbstractEasyCard {
     @Override
     public void upp() {
         upgradeDamage(3);
-        upgradeMagicNumber(2);
+        upgradeMagicNumber(3);
     }
 
     @Override
@@ -37,6 +37,6 @@ public class FromBeyond extends AbstractEasyCard {
 
     @Override
     public void triggerOnExhaust() {
-        Wiz.forAllMonstersLiving(mon -> Wiz.applyToEnemy(mon, new BleedingPower(mon, Wiz.adp(), magicNumber)));
+        Wiz.forAllMonstersLiving(mon -> addToBot(new LoseHPAction(mon, Wiz.adp(), magicNumber, AbstractGameAction.AttackEffect.POISON)));
     }
 }
