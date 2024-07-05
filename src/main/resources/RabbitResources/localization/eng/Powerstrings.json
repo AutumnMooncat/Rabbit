@@ -106,5 +106,9 @@
   "${ModID}:BlessingPower": {
     "NAME": "Lunar Blessing",
     "DESCRIPTIONS": ["#yUpgrade the next card you play for the rest of combat. Bypasses #yUpgrade limitations.","#yUpgrade the next #b"," cards you play for the rest of combat. Bypasses #yUpgrade limitations."]
+  },
+  "${ModID}:AgilePower": {
+    "NAME": "Agile Form",
+    "DESCRIPTIONS": ["Whenever a card is #yExhausted, #yBless your hand.","Whenever a card is #yExhausted, #yBless your hand #b"," times"]
   }
 }

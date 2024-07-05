@@ -9,6 +9,11 @@
     "NAME": "Advantage",
     "DESCRIPTION": "Next turn, ${ModID}:Jump and gain {@@}{!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]} ."
   },
+  "${ModID}:AgileForm": {
+    "NAME": "Agile Form",
+    "DESCRIPTION": "Ethereal. NL Whenever a card is Exhausted, ${ModID}:Bless your hand.",
+    "UPGRADE_DESCRIPTION": "Whenever a card is Exhausted, ${ModID}:Bless your hand."
+  },
   "${ModID}:AshesToAshes": {
     "NAME": "Ashes to Ashes",
     "DESCRIPTION": "Whenever a card is Exhausted, deal !M! damage to a random enemy."

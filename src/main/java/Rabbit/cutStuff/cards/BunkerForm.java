@@ -1,4 +1,4 @@
-package Rabbit.cards;
+package Rabbit.cutStuff.cards;
 
 import Rabbit.cards.abstracts.AbstractEasyCard;
 import Rabbit.powers.BunkerFormPower;
