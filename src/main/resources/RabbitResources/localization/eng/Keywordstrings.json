@@ -128,11 +128,13 @@
     "DESCRIPTION": "#yBleeding creatures lose HP whenever they attack."
   },
   {
-    "ID": "blessing",
-    "PROPER_NAME": "Lunar Blessing",
+    "ID": "bless",
+    "PROPER_NAME": "Bless",
     "NAMES": [
+      "bless",
+      "blessed",
       "blessing"
     ],
-    "DESCRIPTION": "#yBlessings increase the damage and #yBlock of the next viable card you play for the rest of combat."
+    "DESCRIPTION": "#yUpgrade a card for the rest of combat. Bypasses #yUpgrade limitations."
   }
 ]
