@@ -241,7 +241,7 @@
   },
   "${ModID}:SerratedEdge": {
     "NAME": "Serrated Edge",
-    "DESCRIPTION": "Deal !D! damage. NL Apply !M! ${ModID}:Bleed."
+    "DESCRIPTION": "Deal !D! damage. NL Next turn, deal !D! damage."
   },
   "${ModID}:Shatter": {
     "NAME": "Shatter",
