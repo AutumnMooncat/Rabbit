@@ -75,11 +75,11 @@ public class MultiUpgradeAction extends AbstractGameAction {
     }
 
     public static void performUpgrades(List<AbstractCard> cards, int times) {
+        AbstractDungeon.effectsQueue.add(new UpgradeShineEffect((float)Settings.WIDTH / 2.0F, (float)Settings.HEIGHT / 2.0F));
         for (AbstractCard card : cards) {
             CardCounterPatches.cardsBlessedThisCombat++;
             CardCounterPatches.cardsBlessedThisTurn++;
             CardUpgradePatches.applyUnlock(card);
-            AbstractDungeon.effectsQueue.add(new UpgradeShineEffect((float)Settings.WIDTH / 2.0F, (float)Settings.HEIGHT / 2.0F));
             card.superFlash();
             card.applyPowers();
             for (int i = 0 ; i < times ; i++) {
