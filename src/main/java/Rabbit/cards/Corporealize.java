@@ -24,9 +24,8 @@ public class Corporealize extends AbstractEasyCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new BetterSelectCardsCenteredAction(p.exhaustPile.group, cardStrings.EXTENDED_DESCRIPTION[0], card -> CardModifierManager.hasModifier(card, EchoMod.ID), cards -> {
             for (AbstractCard c : cards) {
-                AbstractCard copy = c.makeStatEquivalentCopy();
-                CardModifierManager.removeModifiersById(copy, EchoMod.ID, false);
-                addToTop(new MakeTempCardInHandAction(copy));
+                CardModifierManager.removeModifiersById(c, EchoMod.ID, false);
+                p.exhaustPile.moveToHand(c);
             }
         }));
     }

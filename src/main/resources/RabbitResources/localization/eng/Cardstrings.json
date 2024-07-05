@@ -72,8 +72,8 @@
   },
   "${ModID}:Corporealize": {
     "NAME": "Corporealize",
-    "DESCRIPTION": "Choose an ${ModID}:Echo in your exhaust pile. NL Add a copy to your hand without ${ModID}:Echo. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Choose an ${ModID}:Echo in your exhaust pile. NL Add a copy to your hand without ${ModID}:Echo.",
+    "DESCRIPTION": "Choose an ${ModID}:Echo in your exhaust pile. NL Remove ${ModID}:Echo and add it into your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Choose an ${ModID}:Echo in your exhaust pile. NL Remove ${ModID}:Echo and add it into your hand.",
     "EXTENDED_DESCRIPTION": ["Choose a card to Corporealize."]
   },
   "${ModID}:CrossBlades": {
