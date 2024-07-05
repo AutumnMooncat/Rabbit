@@ -15,6 +15,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.SearingBlowEffect;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 
 import static Rabbit.MainModfile.makeID;
@@ -34,14 +35,13 @@ public class BlessedBlade extends AbstractEasyCard {
         }
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
         addToBot(new DoAction(() -> {
-            MultiUpgradeAction.performUpgrades(Collections.singletonList(this), 1);
             ArrayList<AbstractCard> validCards = new ArrayList<>();
             for (AbstractCard card : p.hand.group) {
                 if (card.type != CardType.STATUS && card.type != CardType.CURSE) {
                     validCards.add(card);
                 }
             }
-            MultiUpgradeAction.performUpgrades(Collections.singletonList(Wiz.getRandomItem(validCards)), 1);
+            MultiUpgradeAction.performUpgrades(Arrays.asList(this, Wiz.getRandomItem(validCards)), 1);
         }));
     }
 
