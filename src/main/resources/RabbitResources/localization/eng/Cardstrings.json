@@ -62,10 +62,6 @@
     "NAME": "Charge Up",
     "DESCRIPTION": "Gain !B! Block. NL Next turn, gain !B! Block and {@@}{!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]} ."
   },
-  "${ModID}:CirclesOfDeath": {
-    "NAME": "Circles of Death",
-    "DESCRIPTION": "At the end of your turn, apply !M! ${ModID}:Bleed to ALL enemies."
-  },
   "${ModID}:Clairvoyance": {
     "NAME": "Clairvoyance",
     "DESCRIPTION": "Make an ${ModID}:Echo of the top !M! cards in your draw pile. Add them into your hand."
@@ -207,6 +203,10 @@
   "${ModID}:MagicSack": {
     "NAME": "Magic Sack",
     "DESCRIPTION": "Put a copy of 1 of !M! random cards from your draw pile into your hand. NL Exhaust."
+  },
+  "${ModID}:Moonbeam": {
+    "NAME": "Moonbeam",
+    "DESCRIPTION": "At the end of your turn, ${ModID}:Bless all cards in your hand{@@}{!M!|>1= !M! times}."
   },
   "${ModID}:Plating": {
     "NAME": "Plating",

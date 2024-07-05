@@ -87,9 +87,9 @@
     "NAME": "Timeless",
     "DESCRIPTIONS": ["Effects that happen next turn happen immediately.","Effects that happen next turn happen immediately #b"," times."]
   },
-  "${ModID}:CirclesOfDeathPower": {
-    "NAME": "Circles of Death",
-    "DESCRIPTIONS": ["At the end of your turn, apply #b"," #yBleed to ALL enemies."]
+  "${ModID}:MoonbeamPower": {
+    "NAME": "Moonbeam",
+    "DESCRIPTIONS": ["At the end of your turn, #yBless all cards in your hand.","At the end of your turn, #yBless all cards in your hand #b"," times."]
   },
   "${ModID}:AshesToAshesPower": {
     "NAME": "Ashes to Ashes",
