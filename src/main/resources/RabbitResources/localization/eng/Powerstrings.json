@@ -67,9 +67,9 @@
     "NAME": "Smokescreen",
     "DESCRIPTIONS": ["Whenever a card is #yExhausted, gain #b"," #yBlock."]
   },
-  "${ModID}:FatalSlashPower": {
-    "NAME": "Fatal Slash",
-    "DESCRIPTIONS": ["Whenever you deal unblocked attack damage, apply #b"," #yBleed."]
+  "${ModID}:Opportunity": {
+    "NAME": "Opportunity",
+    "DESCRIPTIONS": ["Whenever you #yBless a card, deal #b"," damage to a random enemy."]
   },
   "${ModID}:BloodlustPower": {
     "NAME": "Bloodlust",

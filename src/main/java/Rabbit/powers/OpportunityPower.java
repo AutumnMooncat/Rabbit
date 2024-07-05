@@ -1,20 +1,24 @@
 package Rabbit.powers;
 
 import Rabbit.MainModfile;
+import Rabbit.powers.interfaces.OnBlessPower;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.DamageRandomEnemyAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
-public class FatalSlashPower extends AbstractPower {
-    public static final String POWER_ID = MainModfile.makeID(FatalSlashPower.class.getSimpleName());
+public class OpportunityPower extends AbstractPower implements OnBlessPower {
+    public static final String POWER_ID = MainModfile.makeID(OpportunityPower.class.getSimpleName());
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
-    public FatalSlashPower(AbstractCreature owner, int amount) {
+    public OpportunityPower(AbstractCreature owner, int amount) {
         this.ID = POWER_ID;
         this.name = NAME;
         this.owner = owner;
@@ -30,10 +34,9 @@ public class FatalSlashPower extends AbstractPower {
     }
 
     @Override
-    public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
-        if (damageAmount > 0 && target != owner && info.type == DamageInfo.DamageType.NORMAL) {
-            flash();
-            addToTop(new ApplyPowerAction(target, owner, new BleedingPower(target, owner, amount), amount, true));
-        }
+    public void onBless(AbstractCard card, int upgrades) {
+        flash();
+        addToBot(new DamageRandomEnemyAction(new DamageInfo(owner, amount, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+
     }
 }

@@ -113,10 +113,6 @@
     "NAME": "Extreme Speed",
     "DESCRIPTION": "Put X{@@}{!M!|>0= + !M!} random cards from your draw pile into your hand. NL They cost 0 this turn. NL Exhaust."
   },
-  "${ModID}:FatalSlash": {
-    "NAME": "Fatal Slash",
-    "DESCRIPTION": "Whenever an Attack deals unblocked damage, apply !M! ${ModID}:Bleed."
-  },
   "${ModID}:FireBlast": {
     "NAME": "Fire Blast",
     "DESCRIPTION": "Deal !D! damage. NL Damage modifications affect this card twice."
@@ -207,6 +203,10 @@
   "${ModID}:Moonbeam": {
     "NAME": "Moonbeam",
     "DESCRIPTION": "At the end of your turn, ${ModID}:Bless all cards in your hand{@@}{!M!|>1= !M! times}."
+  },
+  "${ModID}:Opportunity": {
+    "NAME": "Opportunity",
+    "DESCRIPTION": "Whenever you ${ModID}:Bless a card, deal !M! damage to a random enemy."
   },
   "${ModID}:Plating": {
     "NAME": "Plating",
