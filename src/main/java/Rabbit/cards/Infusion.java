@@ -3,7 +3,7 @@ package Rabbit.cards;
 import Rabbit.cards.abstracts.AbstractEasyCard;
 import Rabbit.util.Wiz;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
-import com.megacrit.cardcrawl.cards.green.Alchemize;
+import com.megacrit.cardcrawl.cards.red.LimitBreak;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.EnergizedBluePower;
@@ -32,6 +32,6 @@ public class Infusion extends AbstractEasyCard {
 
     @Override
     public String cardArtCopy() {
-        return Alchemize.ID;
+        return LimitBreak.ID;
     }
 }
