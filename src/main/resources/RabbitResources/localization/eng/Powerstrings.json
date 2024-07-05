@@ -105,6 +105,6 @@
   },
   "${ModID}:BlessingPower": {
     "NAME": "Lunar Blessing",
-    "DESCRIPTIONS": ["Increase the damage and #yBlock of the next viable card you play by #b"," this combat."]
+    "DESCRIPTIONS": ["#yUpgrade the next card you play for the rest of combat. Bypasses #yUpgrade limitations.","#yUpgrade the next #b"," cards you play for the rest of combat. Bypasses #yUpgrade limitations."]
   }
 }

@@ -2,7 +2,9 @@ package Rabbit.powers;
 
 import Rabbit.MainModfile;
 import Rabbit.actions.ApplyCardModifierAction;
+import Rabbit.actions.MultiUpgradeAction;
 import Rabbit.cardmods.BlessingMod;
+import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -10,7 +12,10 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+
+import java.util.Collections;
 
 public class BlessingPower extends AbstractPower {
     public static final String POWER_ID = MainModfile.makeID(BlessingPower.class.getSimpleName());
@@ -30,23 +35,17 @@ public class BlessingPower extends AbstractPower {
 
     @Override
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
-    }
-
-    public float modifyBlock(float blockAmount) {
-        return blockAmount + amount;
+        if (amount == 1) {
+            description = DESCRIPTIONS[0];
+        } else {
+            description = DESCRIPTIONS[1] + amount + DESCRIPTIONS[2];
+        }
     }
 
     @Override
-    public float atDamageGive(float damage, DamageInfo.DamageType type) {
-        return damage + amount;
-    }
-
-    public void onUseCard(AbstractCard card, UseCardAction action) {
-        if (card.baseBlock > -1 || card.baseDamage > -1) {
-            flash();
-            addToBot(new ApplyCardModifierAction(card, new BlessingMod(amount)));
-            addToBot(new RemoveSpecificPowerAction(owner, owner, this));
-        }
+    public void onPlayCard(AbstractCard card, AbstractMonster m) {
+        flash();
+        MultiUpgradeAction.performUpgrades(Collections.singletonList(card), 1);
+        addToBot(new ReducePowerAction(owner, owner, this, 1));
     }
 }
