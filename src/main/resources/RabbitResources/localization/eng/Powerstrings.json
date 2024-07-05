@@ -52,8 +52,8 @@
     "DESCRIPTIONS": ["At the start of your next turn, #yJump.","At the start of your next turn, #yJump #b"," times."]
   },
   "${ModID}:FuryPower": {
-    "NAME": "Fury Power",
-    "DESCRIPTIONS": ["Whenever you lose HP, gain #b"," #yFervor."]
+    "NAME": "Fury",
+    "DESCRIPTIONS": ["Whenever you play an #yAttack, gain #b"," #yFervor."]
   },
   "${ModID}:VibrationPower": {
     "NAME": "Vibrations",

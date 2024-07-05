@@ -154,7 +154,7 @@
   },
   "${ModID}:Fury": {
     "NAME": "Fury",
-    "DESCRIPTION": "Whenever you lose HP, gain !M! ${ModID}:Fervor."
+    "DESCRIPTION": "Whenever you play an Attack, gain !M! ${ModID}:Fervor."
   },
   "${ModID}:Gambit": {
     "NAME": "Gambit",

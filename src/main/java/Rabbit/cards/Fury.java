@@ -13,8 +13,8 @@ public class Fury extends AbstractEasyCard {
     public final static String ID = makeID(Fury.class.getSimpleName());
 
     public Fury() {
-        super(ID, 1, CardType.POWER, CardRarity.UNCOMMON, CardTarget.SELF);
-        baseMagicNumber = magicNumber = 3;
+        super(ID, 2, CardType.POWER, CardRarity.RARE, CardTarget.SELF);
+        baseMagicNumber = magicNumber = 2;
     }
 
     @Override
