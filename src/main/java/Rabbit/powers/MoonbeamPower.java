@@ -4,10 +4,13 @@ import Rabbit.MainModfile;
 import Rabbit.actions.DoAction;
 import Rabbit.actions.MultiUpgradeAction;
 import Rabbit.util.Wiz;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+
+import java.util.ArrayList;
 
 public class MoonbeamPower extends AbstractPower {
     public static final String POWER_ID = MainModfile.makeID(MoonbeamPower.class.getSimpleName());
@@ -37,6 +40,14 @@ public class MoonbeamPower extends AbstractPower {
     @Override
     public void atEndOfTurnPreEndTurnCards(boolean isPlayer) {
         flash();
-        addToBot(new DoAction(() -> MultiUpgradeAction.performUpgrades(Wiz.adp().hand.group, amount)));
+        addToBot(new DoAction(() -> {
+            ArrayList<AbstractCard> validCards = new ArrayList<>();
+            for (AbstractCard card : Wiz.adp().hand.group) {
+                if (card.type != AbstractCard.CardType.STATUS && card.type != AbstractCard.CardType.CURSE) {
+                    validCards.add(card);
+                }
+            }
+            MultiUpgradeAction.performUpgrades(validCards, amount);
+        }));
     }
 }
