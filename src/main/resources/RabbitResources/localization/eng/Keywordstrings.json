@@ -133,7 +133,8 @@
     "NAMES": [
       "bless",
       "blessed",
-      "blessing"
+      "blessing",
+      "blessings"
     ],
     "DESCRIPTION": "#yUpgrade a card for the rest of combat. Bypasses #yUpgrade limitations."
   }

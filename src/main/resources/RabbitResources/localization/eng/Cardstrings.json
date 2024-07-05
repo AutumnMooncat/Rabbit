@@ -176,6 +176,10 @@
     "NAME": "Helm Breaker",
     "DESCRIPTION": "${ModID}:Jump. NL Deal !D! damage for each time you have ${ModID}:Jumped this turn.{@@}{!Location!|0= NL (Deals !${ModID}:I! damage.)}"
   },
+  "${ModID}:HolyHammer": {
+    "NAME": "Holy Hammer",
+    "DESCRIPTION": "Deal !D! damage. NL Deals additional damage equal ${ModID}:Blessings performed this combat."
+  },
   "${ModID}:Infusion": {
     "NAME": "Infusion",
     "DESCRIPTION": "Gain {@@}{!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]} . NL Next turn, gain {@@}{!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]} . NL Exhaust."
@@ -187,10 +191,6 @@
   "${ModID}:Kris": {
     "NAME": "Kris",
     "DESCRIPTION": "Deal !D! damage. NL Deals triple damage to enemies with Block."
-  },
-  "${ModID}:Lethality": {
-    "NAME": "Lethality",
-    "DESCRIPTION": "Deal !D! damage. NL Deals additional damage equal to the enemy's ${ModID}:Bleed."
   },
   "${ModID}:LunarForge": {
     "NAME": "Lunar Forge",

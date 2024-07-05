@@ -1,23 +1,21 @@
 package Rabbit.cards;
 
 import Rabbit.cards.abstracts.AbstractEasyCard;
-import Rabbit.powers.BleedingPower;
-import Rabbit.powers.DeathblowPower;
+import Rabbit.patches.CardCounterPatches;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.utility.WaitAction;
 import com.megacrit.cardcrawl.cards.red.Bludgeon;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.vfx.combat.WeightyImpactEffect;
 
 import static Rabbit.MainModfile.makeID;
 
-public class Lethality extends AbstractEasyCard {
-    public final static String ID = makeID(Lethality.class.getSimpleName());
+public class HolyHammer extends AbstractEasyCard {
+    public final static String ID = makeID(HolyHammer.class.getSimpleName());
 
-    public Lethality() {
+    public HolyHammer() {
         super(ID, 2, CardType.ATTACK, CardRarity.RARE, CardTarget.ENEMY);
         baseDamage = damage = 20;
     }
@@ -32,12 +30,18 @@ public class Lethality extends AbstractEasyCard {
     }
 
     @Override
+    public void applyPowers() {
+        int base = baseDamage;
+        baseDamage += CardCounterPatches.cardsBlessedThisCombat;
+        super.applyPowers();
+        baseDamage = base;
+        isDamageModified = baseDamage != damage;
+    }
+
+    @Override
     public void calculateCardDamage(AbstractMonster mo) {
         int base = baseDamage;
-        AbstractPower pow = mo.getPower(BleedingPower.POWER_ID);
-        if (pow != null) {
-            baseDamage += pow.amount;
-        }
+        baseDamage += CardCounterPatches.cardsBlessedThisCombat;
         super.calculateCardDamage(mo);
         baseDamage = base;
         isDamageModified = baseDamage != damage;
