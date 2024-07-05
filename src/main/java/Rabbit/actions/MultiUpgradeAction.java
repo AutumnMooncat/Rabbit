@@ -83,11 +83,11 @@ public class MultiUpgradeAction extends AbstractGameAction {
             CardCounterPatches.cardsBlessedThisCombat++;
             CardCounterPatches.cardsBlessedThisTurn++;
             CardUpgradePatches.applyUnlock(card);
-            card.superFlash();
-            card.applyPowers();
             for (int i = 0 ; i < times ; i++) {
                 card.upgrade();
             }
+            card.superFlash();
+            card.applyPowers();
             for (AbstractPower pow : Wiz.adp().powers) {
                 if (pow instanceof OnBlessPower) {
                     ((OnBlessPower) pow).onBless(card, times);
