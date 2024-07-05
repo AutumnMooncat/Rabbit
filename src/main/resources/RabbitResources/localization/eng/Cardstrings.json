@@ -210,7 +210,7 @@
   },
   "${ModID}:Plating": {
     "NAME": "Plating",
-    "DESCRIPTION": "Gain !B! Block. NL ${ModID}:Clutch: Upgrade all cards in your hand for the rest of combat."
+    "DESCRIPTION": "Gain !B! Block. NL ${ModID}:Clutch: ${ModID}:Bless a Block gaining card !M! times."
   },
   "${ModID}:Pluck": {
     "NAME": "Pluck",
