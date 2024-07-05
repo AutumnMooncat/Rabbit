@@ -23,7 +23,7 @@
   },
   "${ModID}:BlessedBlade": {
     "NAME": "Blessed Blade",
-    "DESCRIPTION": "Deal !D! damage. NL ${ModID}:Bless this card."
+    "DESCRIPTION": "Deal !D! damage. NL ${ModID}:Bless this card and a random card in your hand."
   },
   "${ModID}:Blitz": {
     "NAME": "Blitz",

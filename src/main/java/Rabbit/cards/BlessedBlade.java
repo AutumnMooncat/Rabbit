@@ -3,15 +3,18 @@ package Rabbit.cards;
 import Rabbit.actions.DoAction;
 import Rabbit.actions.MultiUpgradeAction;
 import Rabbit.cards.abstracts.AbstractEasyCard;
+import Rabbit.util.Wiz;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.red.Inflame;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.SearingBlowEffect;
 
+import java.util.ArrayList;
 import java.util.Collections;
 
 import static Rabbit.MainModfile.makeID;
@@ -30,7 +33,16 @@ public class BlessedBlade extends AbstractEasyCard {
             addToBot(new VFXAction(new SearingBlowEffect(m.hb.cX, m.hb.cY, this.timesUpgraded), 0.2F));
         }
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
-        addToBot(new DoAction(() -> MultiUpgradeAction.performUpgrades(Collections.singletonList(this), 1)));
+        addToBot(new DoAction(() -> {
+            MultiUpgradeAction.performUpgrades(Collections.singletonList(this), 1);
+            ArrayList<AbstractCard> validCards = new ArrayList<>();
+            for (AbstractCard card : p.hand.group) {
+                if (card.type != CardType.STATUS && card.type != CardType.CURSE) {
+                    validCards.add(card);
+                }
+            }
+            MultiUpgradeAction.performUpgrades(Collections.singletonList(Wiz.getRandomItem(validCards)), 1);
+        }));
     }
 
     @Override
