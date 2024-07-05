@@ -1,4 +1,4 @@
-package Rabbit.cards;
+package Rabbit.cutStuff.cards;
 
 import Rabbit.actions.DamageFollowupAction;
 import Rabbit.cards.abstracts.AbstractEasyCard;
