@@ -1,11 +1,14 @@
 package Rabbit.cards;
 
+import Rabbit.actions.DoAction;
+import Rabbit.actions.MultiUpgradeAction;
 import Rabbit.cards.abstracts.AbstractEasyCard;
-import Rabbit.powers.CounterPower;
-import Rabbit.util.Wiz;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.red.PowerThrough;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+
+import java.util.Collections;
 
 import static Rabbit.MainModfile.makeID;
 
@@ -15,19 +18,24 @@ public class WeaponsReady extends AbstractEasyCard {
     public WeaponsReady() {
         super(ID, 1, CardType.SKILL, CardRarity.COMMON, CardTarget.SELF);
         baseBlock = block = 6;
-        baseMagicNumber = magicNumber = 6;
+        baseMagicNumber = magicNumber = 1;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         blck();
-        Wiz.applyToSelf(new CounterPower(p, magicNumber));
+        addToBot(new DoAction(() -> {
+            for (AbstractCard card : p.hand.group) {
+                if (card.type == CardType.ATTACK) {
+                    MultiUpgradeAction.performUpgrades(Collections.singletonList(card), magicNumber);
+                }
+            }
+        }));
     }
 
     @Override
     public void upp() {
-        upgradeBlock(2);
-        upgradeMagicNumber(2);
+        upgradeBlock(3);
     }
 
     @Override

@@ -325,7 +325,7 @@
   },
   "${ModID}:WeaponsReady": {
     "NAME": "Weapons Ready",
-    "DESCRIPTION": "Gain !B! Block. NL The next time you are attacked, deal !M! damage back."
+    "DESCRIPTION": "Gain !B! Block. NL ${ModID}:Bless all Attacks in your hand{@@}{!M!|>1= !M! times}."
   },
   "${ModID}:YouAndWhatArmy": {
     "NAME": "You and What Army",
