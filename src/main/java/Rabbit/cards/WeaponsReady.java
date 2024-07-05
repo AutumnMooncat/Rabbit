@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.cards.red.PowerThrough;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import java.util.ArrayList;
 import java.util.Collections;
 
 import static Rabbit.MainModfile.makeID;
@@ -25,11 +26,13 @@ public class WeaponsReady extends AbstractEasyCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         blck();
         addToBot(new DoAction(() -> {
+            ArrayList<AbstractCard> validCards = new ArrayList<>();
             for (AbstractCard card : p.hand.group) {
                 if (card.type == CardType.ATTACK) {
-                    MultiUpgradeAction.performUpgrades(Collections.singletonList(card), magicNumber);
+                    validCards.add(card);
                 }
             }
+            MultiUpgradeAction.performUpgrades(validCards, magicNumber);
         }));
     }
 
