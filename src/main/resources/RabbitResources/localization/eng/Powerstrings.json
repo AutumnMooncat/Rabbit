@@ -67,7 +67,7 @@
     "NAME": "Smokescreen",
     "DESCRIPTIONS": ["Whenever a card is #yExhausted, gain #b"," #yBlock."]
   },
-  "${ModID}:Opportunity": {
+  "${ModID}:OpportunityPower": {
     "NAME": "Opportunity",
     "DESCRIPTIONS": ["Whenever you #yBless a card, deal #b"," damage to a random enemy."]
   },
