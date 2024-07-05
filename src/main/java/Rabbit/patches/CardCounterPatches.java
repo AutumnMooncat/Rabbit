@@ -21,6 +21,8 @@ public class CardCounterPatches {
     public static int cardsSurveyedThisCombat;
     public static int cardsGuidedThisTurn;
     public static int cardsGuidedThisCombat;
+    public static int cardsBlessedThisTurn;
+    public static int cardsBlessedThisCombat;
     public static int jumpsThisTurn;
     public static AbstractCreature lastAttacker;
     public static final ArrayList<AbstractCard> cardsDrawnThisTurn = new ArrayList<>();
@@ -38,6 +40,8 @@ public class CardCounterPatches {
             cardsSurveyedThisTurn = 0;
             cardsGuidedThisCombat = 0;
             cardsGuidedThisTurn = 0;
+            cardsBlessedThisCombat = 0;
+            cardsBlessedThisTurn = 0;
             lastAttacker = null;
             cardsDrawnThisCombat.clear();
             cardsDrawnThisTurn.clear();
@@ -54,6 +58,7 @@ public class CardCounterPatches {
         public static void reset() {
             cardsSurveyedThisTurn = 0;
             cardsGuidedThisTurn = 0;
+            cardsBlessedThisTurn = 0;
             cardsDrawnThisTurn.clear();
             initialHand.clear();
             isInitialDraw = true;

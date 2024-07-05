@@ -1,11 +1,15 @@
 package Rabbit.actions;
 
+import Rabbit.patches.CardCounterPatches;
 import Rabbit.patches.CardUpgradePatches;
+import Rabbit.powers.interfaces.OnBlessPower;
+import Rabbit.util.Wiz;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.vfx.UpgradeShineEffect;
 
 import java.util.ArrayList;
@@ -72,12 +76,19 @@ public class MultiUpgradeAction extends AbstractGameAction {
 
     public static void performUpgrades(List<AbstractCard> cards, int times) {
         for (AbstractCard card : cards) {
+            CardCounterPatches.cardsBlessedThisCombat++;
+            CardCounterPatches.cardsBlessedThisTurn++;
             CardUpgradePatches.applyUnlock(card);
             AbstractDungeon.effectsQueue.add(new UpgradeShineEffect((float)Settings.WIDTH / 2.0F, (float)Settings.HEIGHT / 2.0F));
             card.superFlash();
             card.applyPowers();
             for (int i = 0 ; i < times ; i++) {
                 card.upgrade();
+            }
+            for (AbstractPower pow : Wiz.adp().powers) {
+                if (pow instanceof OnBlessPower) {
+                    ((OnBlessPower) pow).onBless(card, times);
+                }
             }
         }
     }
