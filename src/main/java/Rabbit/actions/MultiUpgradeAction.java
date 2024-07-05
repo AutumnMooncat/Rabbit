@@ -75,6 +75,9 @@ public class MultiUpgradeAction extends AbstractGameAction {
     }
 
     public static void performUpgrades(List<AbstractCard> cards, int times) {
+        if (cards.isEmpty()) {
+            return;
+        }
         AbstractDungeon.effectsQueue.add(new UpgradeShineEffect((float)Settings.WIDTH / 2.0F, (float)Settings.HEIGHT / 2.0F));
         for (AbstractCard card : cards) {
             CardCounterPatches.cardsBlessedThisCombat++;
