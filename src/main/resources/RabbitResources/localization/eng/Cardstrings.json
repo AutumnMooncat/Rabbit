@@ -321,7 +321,7 @@
   },
   "${ModID}:Vibrations": {
     "NAME": "Vibrations",
-    "DESCRIPTION": "Whenever you play an ${ModID}:Echo, gain !M! Block."
+    "DESCRIPTION": "Whenever you play an ${ModID}:Echo, gain !M! Vigor."
   },
   "${ModID}:WeaponsReady": {
     "NAME": "Weapons Ready",

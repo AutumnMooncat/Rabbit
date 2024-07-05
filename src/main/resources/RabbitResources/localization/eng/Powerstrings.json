@@ -57,7 +57,7 @@
   },
   "${ModID}:VibrationPower": {
     "NAME": "Vibrations",
-    "DESCRIPTIONS": ["Whenever you play an #yEcho, gain #b"," #yBlock."]
+    "DESCRIPTIONS": ["Whenever you play an #yEcho, gain #b"," #yVigor."]
   },
   "${ModID}:SpringLoadedPower": {
     "NAME": "Spring-Loaded",

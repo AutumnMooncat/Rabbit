@@ -3,6 +3,7 @@ package Rabbit.powers;
 import Rabbit.MainModfile;
 import Rabbit.cardmods.EchoMod;
 import basemod.helpers.CardModifierManager;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -11,6 +12,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.watcher.VigorPower;
 
 public class VibrationPower extends AbstractPower {
     public static final String POWER_ID = MainModfile.makeID(VibrationPower.class.getSimpleName());
@@ -37,7 +39,7 @@ public class VibrationPower extends AbstractPower {
     public void onUseCard(AbstractCard card, UseCardAction action) {
         if (CardModifierManager.hasModifier(card, EchoMod.ID)) {
             flash();
-            addToBot(new GainBlockAction(owner, amount, Settings.FAST_MODE));
+            addToBot(new ApplyPowerAction(owner, owner, new VigorPower(owner, amount)));
         }
     }
 }
