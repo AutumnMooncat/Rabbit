@@ -21,6 +21,10 @@
     "NAME": "Blast from the Past",
     "DESCRIPTION": "Retain. NL Deal !D! damage. NL When Retained, add an ${ModID}:Echo of this into your hand."
   },
+  "${ModID}:BlessedBlade": {
+    "NAME": "Blessed Blade",
+    "DESCRIPTION": "Deal !D! damage. NL ${ModID}:Bless this card."
+  },
   "${ModID}:Blitz": {
     "NAME": "Blitz",
     "DESCRIPTION": "Deal !D! damage and apply !M! Weak to a random enemy twice."
