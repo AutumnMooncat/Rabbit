@@ -80,10 +80,6 @@
     "NAME": "Cross Blades",
     "DESCRIPTION": "Deal !D! damage. NL Apply !M! Weak."
   },
-  "${ModID}:CursedForge": {
-    "NAME": "Cursed Forge",
-    "DESCRIPTION": "Upgrade an Attack in your hand !M! times for the rest of combat. NL Bypasses Upgrade limitations."
-  },
   "${ModID}:Defend": {
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
@@ -199,6 +195,10 @@
   "${ModID}:Lethality": {
     "NAME": "Lethality",
     "DESCRIPTION": "Deal !D! damage. NL Deals additional damage equal to the enemy's ${ModID}:Bleed."
+  },
+  "${ModID}:LunarForge": {
+    "NAME": "Lunar Forge",
+    "DESCRIPTION": "${ModID}:Bless an Attack !M! times."
   },
   "${ModID}:MagicSack": {
     "NAME": "Magic Sack",

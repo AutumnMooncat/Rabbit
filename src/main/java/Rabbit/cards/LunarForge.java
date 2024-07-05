@@ -8,10 +8,10 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import static Rabbit.MainModfile.makeID;
 
-public class CursedForge extends AbstractEasyCard {
-    public final static String ID = makeID(CursedForge.class.getSimpleName());
+public class LunarForge extends AbstractEasyCard {
+    public final static String ID = makeID(LunarForge.class.getSimpleName());
 
-    public CursedForge() {
+    public LunarForge() {
         super(ID, 1, CardType.SKILL, CardRarity.RARE, CardTarget.NONE);
         baseMagicNumber = magicNumber = 2;
     }
