@@ -41,7 +41,11 @@ public class BlessedBlade extends AbstractEasyCard {
                     validCards.add(card);
                 }
             }
-            MultiUpgradeAction.performUpgrades(Arrays.asList(this, Wiz.getRandomItem(validCards)), 1);
+            if (validCards.isEmpty()) {
+                MultiUpgradeAction.performUpgrades(Collections.singletonList(this), 1);
+            } else {
+                MultiUpgradeAction.performUpgrades(Arrays.asList(this, Wiz.getRandomItem(validCards)), 1);
+            }
         }));
     }
 
